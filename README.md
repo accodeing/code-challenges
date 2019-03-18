@@ -16,4 +16,4 @@ Each challenge has different rules and restraints and serve different purpouses.
 | 2 | Find Longest Common  | Compare two strings and find the longest part from the first inside the second.<br>Example: abcd abdbcdd = bcd  | Free Choice | Jonas  |
 | 3 |  QuickSort | Sort an array in order from low to high. | Free Choice  | Jonas  |
 | 4 |  Palindrome | Check if a word is a palindrome | Free Choice  | Jonas |
-| 5 | Palindrome  | Check if a word is a palindrome in a new language. | Something you havn't used before  | Hannes  |
+| 5 | Palindrome  | Check if a word is a palindrome | Something you haven't used before  | Hannes  |
