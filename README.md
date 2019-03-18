@@ -1,0 +1,19 @@
+# Accodeing Coding Challenges
+
+In this repo we store our in house coding challenges. Doing coding challenges is a great way to kickstart the week and an oppertunity to quickly delve into problem solving.
+
+Each challenge has different rules and restraints and serve different purpouses.
+
+* Each friday someone sets up a new challenge for the coming week. 
+* A challenge can be between 30 minutes and 5 days long.
+* The language used can be set or be left to each participant to decide.
+* A challenge is not a competition.
+* The gain is in trying to find the sollution and sharing your experience rather than the sollutions themselves.
+
+| N.  | Challenge  | Description  | Language | Created by |
+-- | ------------ | -- | -- | --
+| 1 | FizzBuzz  | A famous  coding challenge where you replace everything dividable by 3 and 5 with Fizz and Buzz respectivly and FizzBuzz when both are true.  |  Free Choice |  Jonas |
+| 2 | Find Longest Common  | Compare two strings and find the longest part from the first inside the second.<br>Example: abcd abdbcdd = bcd  | Free Choice | Jonas  |
+| 3 |  QuickSort | Sort an array in order from low to high. | Free Choice  | Jonas  |
+| 4 |  Palindrome | Check if a word is a palindrome | Free Choice  | Jonas |
+| 5 | Palindrome  | Check if a word is a palindrome in a new language. | Something you havn't used before  | Hannes  |
