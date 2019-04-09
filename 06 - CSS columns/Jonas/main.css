@@ -1,0 +1,26 @@
+body > p, body > img {
+  display: none;
+}
+
+article {
+  margin-left: 50%;
+
+}
+
+aside {
+  float: left;
+  width: 50%;
+}
+
+aside img {
+  width: calc( 100% - 20px );
+}
+
+@media (max-width: 600px) {
+  article, aside {
+    display: none;
+  }
+  body > p, body > img {
+    display: block;
+  }
+}
