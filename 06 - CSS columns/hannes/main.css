@@ -1,0 +1,13 @@
+img {
+  grid-area: image;
+}
+
+p {
+  grid-area: text;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: 'image text';
+}

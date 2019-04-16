@@ -17,3 +17,5 @@ Each challenge has different rules and restraints and serve different purpouses.
 | 3 | [ArraySort](https://github.com/accodeing/code-challenges/tree/master/03%20-%20ArraySort) | Sort an array in order from low to high. | Free Choice  | Jonas  |
 | 4 | [Palindrome](https://github.com/accodeing/code-challenges/tree/master/04%20-%20Palindrome) | Check if a word is a palindrome | Free Choice  | Jonas |
 | 5 | [Palindrome 2](https://github.com/accodeing/code-challenges/tree/master/05%20-%20Palindrome%202) | Check if a word is a palindrome | Something you haven't used before  | Hannes  |
+| 6 | [Impossible CSS layout](https://github.com/accodeing/code-challenges/tree/master/06%20-%20CSS%20columns) | Is this layout impossible to build with CSS? | Free Choice  | Jonas  |
+| 7 | [CSS Grid Layout](https://github.com/accodeing/code-challenges/tree/master/07%20-%20CSS%20Layout) | A standard CSS Grid Layout | Free Choice  | Hannes  |
