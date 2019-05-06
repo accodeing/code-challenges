@@ -19,3 +19,5 @@ Each challenge has different rules and restraints and serve different purpouses.
 | 5 | [Palindrome 2](https://github.com/accodeing/code-challenges/tree/master/05%20-%20Palindrome%202) | Check if a word is a palindrome | Something you haven't used before  | Hannes  |
 | 6 | [Impossible CSS layout](https://github.com/accodeing/code-challenges/tree/master/06%20-%20CSS%20columns) | Is this layout impossible to build with CSS? | Free Choice  | Jonas  |
 | 7 | [CSS Grid Layout](https://github.com/accodeing/code-challenges/tree/master/07%20-%20CSS%20Layout) | A standard CSS Grid Layout | Free Choice  | Hannes  |
+| 8 | [Responsive website menu](https://github.com/accodeing/code-challenges/tree/master/08%20-%20Responsive%20HTML%20menu) | Create a responsive website menu | Free Choice  | Hannes  |
+| 9 | [Webpage night mode](https://github.com/accodeing/code-challenges/tree/master/09%20-%20Webpage%20night%20mode) | Add night mode support to a web page | Free Choice  | Hannes  |
