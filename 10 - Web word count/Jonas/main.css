@@ -1,0 +1,83 @@
+input:invalid {
+    border-color: red;
+}
+input,
+input:valid {
+    border-color: #ccc;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  background-color: #ECEFF1;
+  padding-top: 10rem;
+}
+
+.message {
+  text-align: center;
+}
+
+.form {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+  position: relative;
+}
+
+label,
+input {
+  display: block;
+}
+
+label {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #B0BEC5;
+  margin-bottom: 10px;
+}
+
+input {
+  display: inline-block;
+  background-color: #eceff1;
+  padding: 10px;
+  outline: 0;
+  border: 2px solid #B0BEC5;
+  font-size: 1em;
+  width: 7rem;
+}
+
+.text-width {
+  font-family: system-ui;
+  font-size: 2em;
+  padding: 10px;
+  border: 2px solid #B0BEC5;
+  visibility: hidden;
+  width: auto;
+}
+
+.form__field-word {
+  width: 15rem;
+}
+
+input:invalid {
+  border-color: #DD2C00;
+}
+
+input:focus {
+  background-color: #fff;
+}
+
+#notify {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 12px;
+  width: 100%;
+  color: #fff;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#notify.error {
+  background-color: #DD2C00;
+}
