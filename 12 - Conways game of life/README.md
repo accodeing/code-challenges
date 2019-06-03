@@ -15,3 +15,9 @@ Build a web app, in any framework/language, that visualize the game of life. The
 1. Create an architecture for the problem; what do you need to keep track of, how will you calculate the next step and how will you update/drive the visualisation.
 2. Implement a proof of concept/first version.
 3. Reflect on the inplementation and find ways you could improve it for a second version.
+
+### Goal for step 1
+* Some design documnet, can just be a simple README or a complete doc with graphs etc, detailing how you are going to solve the problem.
+* Technology choice with motivation, tell us what you are going to use and why you choose it.
+* Risks, potential problem areas that might make the proposed design fail or get over complicated.
+* Estimate of how long it will take.
