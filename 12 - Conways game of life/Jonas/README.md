@@ -1,18 +1,7 @@
-# Design
-
-1. Create an architecture for the problem; what do you need to keep track of, how will you calculate the next step and how will you update/drive the visualisation.
-
-### Goal for step 1
-* Some design documnet, can just be a simple README or a complete doc with graphs etc, detailing how you are going to solve the problem.
-* Technology choice with motivation, tell us what you are going to use and why you choose it.
-* Risks, potential problem areas that might make the proposed design fail or get over complicated.
-* Estimate of how long it will take.
-
 # Requirements
 * We need a grid, I'm going to allow it to be configurable in size, to hold/show the current state.
-* The datastructure for the grid will be a bit array. Essentially holding each cell in the grid as a bit in the array.
 * The time will also be configurable, to seconds, and is the pause between state updates.
-* The starting position should be configurable for the user, you should be able to generate a random one and load famous ones from a library.
+* The starting state should be configurable by the user, you should be able to generate a random one and load famous ones from a library.
 
 ## Order of implementation
 To make this possible to do in half an hour we need to focus our efforts.
@@ -54,6 +43,8 @@ Total time: ~2 hours, 30 minutes to get the main logic and rendering working and
 
 # Implementation plan
 The simulation will run a timestep at a time. Waiting for the timer, performing the state update and rendering.
+
+The datastructure for the grid will be a bit array. Essentially holding each cell in the grid as a bit in the array.
 
 At each timestep we need to calculate the new state of each cell. Since we have the data as bits and depend on only 8 of the bits to determine liveness for the next step we need to make, at most, 8 bitwise calculations per cell in the grid. At mist since we can exit early as soon as we reach at least two live bits.
 
