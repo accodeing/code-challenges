@@ -68,3 +68,22 @@ The state will be an `ArrayBuffer` with a uint8 view.
 # Risks
 * I don't know how to efficiently do the bitwise operations.
 * It might take longer than I think to get the update logic working, the rest of the must haves are pretty simple - but still takes time.
+
+# Notes
+* Functions for finding neighbours can use the `( center_x + offset + rows) % rows` trick.
+* Like this: `center_index = (total_length + (y * row_length) + x) % total_length`, if x and y are zero based, so 0-9 for a 10x10 grid.
+
+To generalize that we need to take row length etc into account and applythe trick in two steps, once for the row part and once for the position in the row:
+
+```
+const index = ( x, y ) => ((( 10 + y ) * 10 ) % 100 ) + (( 10 + x ) % 10 );`
+
+so running a loop like this:
+```
+for(let y=-1;y<2;y++){
+  for(let x=-1;x<2;x++){
+	console.log( index( center_x + x, center_y + y ));
+  }
+}
+```
+Will give you all the neighbours indexex in the array, including edges!
