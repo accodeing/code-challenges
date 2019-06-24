@@ -23,6 +23,5 @@ Each challenge has different rules and restraints and serve different purpouses.
 | 9 | [Webpage night mode](https://github.com/accodeing/code-challenges/tree/master/09%20-%20Webpage%20night%20mode) | Add night mode support to a web page | Free Choice  | Hannes  |
 | 10 | [Web word count](https://github.com/accodeing/code-challenges/tree/master/10%20-%20Web%20word%20count) | Count words from an HTML input | Free Choice | Hannes |
 | 11 | [Markdown parser](https://github.com/accodeing/code-challenges/tree/master/11%20-%20Markdown%20parser) | A simple Markdown heading parser | Free Choice | Hannes |
-| 12 | [Conways game of life](https://github.com/accodeing/code-challenges/tree/master/12%20-%20Conways%20game%20of%20life) | Prepare how to implement the game as a web application | Free Choice | Jonas |
-| 13 | [Conways game of life part 2](https://github.com/accodeing/code-challenges/tree/master/13%20-%20Conways%20game%20of%20life%20part%202) | Implement your application according to your plan | Free Choice | Jonas |
-| 14 | [Web Component Button](https://github.com/accodeing/code-challenges/tree/master/14%20-%20Web%20Component%20button) | Create a Button as a Web Component | HTML & JS | Hannes |
+| 12 | [Conways game of life](https://github.com/accodeing/code-challenges/tree/master/12%20-%20Conways%20game%20of%20life) | Create a web application to simulate the game | Free Choice | Jonas |
+| 13 | [Web Component Button](https://github.com/accodeing/code-challenges/tree/master/13%20-%20Web%20Component%20button) | Create a Button as a Web Component | HTML & JS | Hannes |
