@@ -5,4 +5,4 @@ We have four new interesting technologies:
 - Shadow DOM
 - ES Modules
 
-There are the building blocks for Web Components. Let's try building our own web component. Your task is to build a button component that takes an optional icon.
+These are the building blocks for Web Components. Let's try building our own web component. Your task is to build a button component that takes an optional icon.
