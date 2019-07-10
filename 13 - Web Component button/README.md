@@ -1,5 +1,7 @@
 # Web component button
+
 We have four new interesting technologies:
+
 - HTML Templates
 - Custom Elements
 - Shadow DOM
