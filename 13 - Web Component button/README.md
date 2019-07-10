@@ -8,3 +8,10 @@ We have four new interesting technologies:
 - ES Modules
 
 These are the building blocks for Web Components. Let's try building our own web component. Your task is to build a button component that takes an optional icon.
+
+# Solutions
+
+Check out the [starter](starter/)
+[Jonas' solution](Jonas/)
+[Hannes' solution](Hannes/)
+[Tomas' solution](Tomas/)
