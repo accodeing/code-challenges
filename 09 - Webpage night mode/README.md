@@ -6,6 +6,6 @@ We are using Jonas' page from last week. You should be able to toggle the night 
 
 # Solutions
 
-Check out the [starter](starter/)
-[Jonas' solution](Jonas/)
+Check out the [starter](starter/)  
+[Jonas' solution](Jonas/)  
 [Hannes' solution](Hannes/)

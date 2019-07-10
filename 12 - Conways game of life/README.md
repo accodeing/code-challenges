@@ -28,5 +28,5 @@ Build a web app, in any framework/language, that visualize the game of life. The
 
 # Solutions
 
-[Jonas' solution](Jonas/)
+[Jonas' solution](Jonas/)  
 [Hannes' solution](Hannes/)

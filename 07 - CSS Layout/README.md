@@ -6,6 +6,6 @@ This task is simple: just build this standard layout. How the mobile layout shou
 
 # Solutions
 
-[Jonas' solution](Jonas/)
-[Hannes' solution](Hannes/)
+[Jonas' solution](Jonas/)  
+[Hannes' solution](Hannes/)  
 [Tomas' solution](Tomas/)

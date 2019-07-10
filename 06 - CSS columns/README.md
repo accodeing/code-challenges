@@ -15,7 +15,7 @@ Any technology is fair game. Start from the template site and find the simplest 
 
 # Solutions
 
-Check out the [starter](starter/)
-[Jonas' solution](Jonas/)
-[Hannes' solution](Hannes/)
+Check out the [starter](starter/)  
+[Jonas' solution](Jonas/)  
+[Hannes' solution](Hannes/)  
 [Tomas' solution](Tomas/)

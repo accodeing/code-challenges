@@ -6,5 +6,5 @@ Bonus objective: some sort of form validation.
 
 # Solutions
 
-[Jonas' solution](Jonas/)
+[Jonas' solution](Jonas/)  
 [Hannes' solution](Hannes/)
