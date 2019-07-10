@@ -1,0 +1,32 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.small {
+  font-size: 16px;
+}
+
+.medium {
+  font-size: 32px;
+}
+
+.large {
+  font-size: 64px;
+}
+
+button {
+  font-size: 24px;
+  width: 32px;
+  height: 32px;
+  line-height: 24px;
+  background-color: #b7dff2;
+  border: 1px solid #9ac5da;
+}

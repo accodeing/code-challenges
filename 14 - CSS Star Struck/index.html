@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>CSS star animation</title>
+    <link href="main.css" rel="stylesheet" />
+    <script src="heimr-star-struck.js"></script>
+    <script src="heimr-star-struck-rating.js"></script>
+  </head>
+  <body>
+    <p class="small">
+      Small star:<heimr-star-struck></heimr-star-struck>
+    </p>
+    <p class="medium">
+      Medium star:<heimr-star-struck></heimr-star-struck>
+    </p>
+    <p class="large">
+      Large star:<heimr-star-struck></heimr-star-struck>
+    </p>
+    <div class="medium">
+      <heimr-star-struck-rating stars="3"></heimr-star-struck-rating>
+      <p>
+        It has a rating of <span id="rating">0</span> out of <span id="stars">3</span>.
+      </p>
+      <p>
+        Add/remove stars: <button id="add_star">+</button><button id="remove_star">-</button>
+      </p>
+    </div>
+    <script type="text/javascript">
+      document.querySelector('heimr-star-struck-rating').addEventListener('rating_change', e => {
+        document.getElementById('rating').innerText = e.detail.rating;
+        document.getElementById('stars').innerText = e.detail.max;
+      });
+      document.getElementById('add_star').addEventListener('click', () => {
+        document.querySelector('heimr-star-struck-rating').stars += 1;
+      });
+      document.getElementById('remove_star').addEventListener('click', () => {
+        document.querySelector('heimr-star-struck-rating').stars -= 1;
+      });
+    </script>
+  </body>
+</html>
