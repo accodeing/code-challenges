@@ -1,0 +1,8 @@
+{
+  "name": "my-first-lit-element-component",
+  "description": "My first LitElement component",
+  "main": "index.js",
+  "dependencies": {
+    "lit-element": "^2.2.1"
+  }
+}
