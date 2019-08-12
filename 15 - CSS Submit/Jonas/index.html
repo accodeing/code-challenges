@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <title>CSS star animation</title>
+    <link href="main.css" rel="stylesheet" />
+    <script src="heimr-star-struck.js"></script>
+    <script src="heimr-star-struck-rating.js"></script>
+  </head>
+  <body>
+    <div class="host">
+      <div class="shadow"></div>
+      <button class="fancy">
+        <svg width="86px" height="19px" viewBox="0 0 86 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="" class="">
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <path d="M72.26,1.8 L85.36,1.8" id="T-roof" stroke="#FFFFFF" stroke-width="1.56" class="NFNxlLfF_0"></path>
+            <path d="M86.536,10.276 L71.086,10.274" id="T-stem" stroke="#FFFFFF" stroke-width="1.75" transform="translate(78.811000, 10.275000) rotate(-90.000000) translate(-78.811000, -10.275000) " class="NFNxlLfF_1"></path>
+            <path d="M77.224,9.506 L60.232,9.502" id="I" stroke="#FFFFFF" stroke-width="1.75" transform="translate(68.728000, 9.504000) rotate(-90.000000) translate(-68.728000, -9.504000) " class="NFNxlLfF_2"></path>
+            <path d="M71.231,9.789 L54.239,9.789" id="M-second-stem" stroke="#FFFFFF" stroke-width="1.75" transform="translate(62.450000, 9.789000) rotate(-90.000000) translate(-62.450000, -9.789000) " class="NFNxlLfF_3"></path>
+            <path id="M-beam" stroke="#FFFFFF" stroke-width="1.65" transform="translate(54.925000, 9.490000) rotate(-90.000000) translate(-54.925000, -9.490000) " d="M62.615,1.965L62.615,3.155L47.235,9.465L47.235,9.49L62.615,15.785L62.615,17.015" class="NFNxlLfF_4"></path>
+            <path d="M55.603,9.211 L38.611,9.211" id="M-first-stem" stroke="#FFFFFF" stroke-width="1.75" transform="translate(47.400000, 9.211000) rotate(-90.000000) translate(-47.400000, -9.211000) " class="NFNxlLfF_5"></path>
+            <path d="M41.0850894,8.42768187 C41.0850894,15.2681845 40.7536311,17.9576311 36.7991356,17.9576311 C33.5706776,17.9576311 32.8728559,14.2671633 33.0776311,8.44411525" id="B-bottom-bulb" stroke="#FFFFFF" stroke-width="1.6" transform="translate(37.064975, 13.192656) rotate(-90.000000) translate(-37.064975, -13.192656) " class="NFNxlLfF_6"></path>
+            <path d="M40.3561083,1.11643338 C40.3561083,7.38561488 40.3561083,9.73243338 36.7086848,9.85411702 C32.7839332,9.98505275 32.9852591,3.62371329 32.9853269,1.11643338" id="B-top-bulb" stroke="#FFFFFF" stroke-width="1.6" transform="translate(36.669837, 5.486271) rotate(-90.000000) translate(-36.669837, -5.486271) " class="NFNxlLfF_7"></path>
+            <path d="M41.081,9.789 L24.089,9.789" id="B-stem" stroke="#FFFFFF" stroke-width="1.75" transform="translate(32.300000, 9.789000) rotate(-90.000000) translate(-32.300000, -9.789000) " class="NFNxlLfF_8"></path>
+            <path d="M29.1879732,3.97317185 C24.8514858,3.97317185 21.2654189,3.97317185 18.4297724,3.97317185 C14.1763028,3.97317185 12.5308282,6.4862874 12.5308282,9.35317185 C12.5308282,12.2200563 14.1763028,14.6999732 18.4297724,14.6999732 C21.2654189,14.6999732 24.8514858,14.6999732 29.1879732,14.6999732" id="U" stroke="#FFFFFF" stroke-width="1.75" transform="translate(20.859401, 9.336573) rotate(-90.000000) translate(-20.859401, -9.336573) " class="NFNxlLfF_9"></path>
+            <path d="M12.120531,14.0801701 C15.3776643,11.4311591 13.8706737,5.90619507 10.8906331,5.5089982 C7.91059243,5.11180133 6.62606972,7.01670482 5.79253091,10.0749161 C4.9589921,13.1331273 3.77436645,14.8044288 0.38358595,13.8201444 C-3.00719455,12.83586 -3.0543357,6.72245109 0.0664862555,4.91852336" id="S" stroke="#FFFFFF" stroke-width="1.75" transform="translate(5.867190, 9.510474) rotate(-90.000000) translate(-5.867190, -9.510474) " class="NFNxlLfF_10"></path>
+          </g>
+        </svg>
+      </button>
+    </div>
+    <script type="text/javascript">
+      let animation_trigger;
+      const fancy = document.querySelector('.fancy');
+
+      fancy.addEventListener('mouseenter', () => {
+        animation_trigger = window.setTimeout(()=>{
+          fancy.style.transition = 'transform 10ms';
+          fancy.classList.add('start');
+        }, 500);
+      })
+      fancy.addEventListener('mouseleave', () => {
+        window.clearTimeout( animation_trigger );
+        fancy.classList.remove('start');
+
+        fancy.style.transition = null;
+        fancy.style.transform = null;
+      });
+
+      fancy.addEventListener('mousemove', (event) => {
+        var scroll_x = window.scrollX;
+        var scroll_y = window.scrollY;
+        var rect = event.target.getBoundingClientRect();
+        var x = event.clientX - rect.left;
+        var y = event.clientY - rect.top;
+        var rotateX = -30 * (( y / rect.height ) - .5);
+        var rotateY = 30 * (( x / rect.width ) - .5);
+
+        fancy.style.transform = `translateZ(100px) rotateX(${ rotateX }deg) rotateY(${ rotateY }deg)`;
+      });
+
+    </script>
+  </body>
+</html>

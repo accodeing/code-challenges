@@ -1,0 +1,182 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.host {
+  perspective: 400px;
+  perspective-origin: 50% 50%;
+  position: relative;
+}
+
+.shadow {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  background-color: #888;
+  height: 1em;
+  width: 7em;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 1.5em;
+  box-shadow: 0 0 0 #888;
+  transition: box-shadow 500ms, width 500ms, left 500ms;
+}
+
+.host:hover .shadow {
+  box-shadow: 0 0 1.5em 1.5em #888;
+  left: 0;
+  width: 9em;
+}
+
+.fancy {
+  outline: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  max-height: 2.5em;
+  height: 2.5em;
+  max-width: 9em;
+  width: 9em;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 300;
+  border: none;
+  border-radius: 1.5em;
+  background: white;
+  color: #ccc;
+  overflow: hidden;
+  transition: transform 400ms;
+}
+
+.fancy:hover {
+  transform: translateZ(100px);
+}
+
+.fancy::before {
+  position: absolute;
+  content: "";
+  box-sizing: border-box;
+  max-height: 2.5em;
+  height: 2.5em;
+  max-width: 9em;
+  width: 9em;
+  border: 0.2em solid #ccc;
+  border-radius: 2em;
+  transition: border 400ms 100ms, background-color 50ms;
+  z-index: 1;
+}
+
+.fancy:hover::before {
+  border: 1.35em solid #000;
+  background-color: #000;
+  transition: border 400ms, background-color 1ms 300ms;
+}
+
+.fancy::after {
+  content: "submit";
+  position: absolute;
+  color: #ccc;
+}
+
+.fancy svg {
+  z-index: 1;
+  display: none;
+}
+
+.fancy.start svg {
+  z-index: 1;
+  display: block;
+}
+
+.fancy svg path {
+  fill: transparent;
+}
+
+.fancy.start svg .NFNxlLfF_0,
+.fancy.start svg .NFNxlLfF_1,
+.fancy.start svg .NFNxlLfF_2,
+.fancy.start svg .NFNxlLfF_3,
+.fancy.start svg .NFNxlLfF_4,
+.fancy.start svg .NFNxlLfF_5,
+.fancy.start svg .NFNxlLfF_6,
+.fancy.start svg .NFNxlLfF_7,
+.fancy.start svg .NFNxlLfF_8,
+.fancy.start svg .NFNxlLfF_9,
+.fancy.start svg .NFNxlLfF_10 {
+  animation: NFNxlLfF_draw 1000ms ease-out 0ms forwards;
+}
+
+.fancy svg .NFNxlLfF_0 {
+  stroke-dasharray: 14 16;
+  stroke-dashoffset: 15;
+}
+
+.fancy svg .NFNxlLfF_1 {
+  stroke-dasharray: 16 18;
+  stroke-dashoffset: 17;
+}
+.fancy svg .NFNxlLfF_2 {
+  stroke-dasharray: 17 19;
+  stroke-dashoffset: 18;
+}
+.fancy svg .NFNxlLfF_3 {
+  stroke-dasharray: 17 19;
+  stroke-dashoffset: 18;
+}
+.fancy svg .NFNxlLfF_4 {
+  stroke-dasharray: 36 38;
+  stroke-dashoffset: 37;
+}
+.fancy svg .NFNxlLfF_5 {
+  stroke-dasharray: 17 19;
+  stroke-dashoffset: 18;
+}
+.fancy svg .NFNxlLfF_6 {
+  stroke-dasharray: 24 26;
+  stroke-dashoffset: 25;
+}
+.fancy svg .NFNxlLfF_7 {
+  stroke-dasharray: 22 24;
+  stroke-dashoffset: 23;
+}
+.fancy svg .NFNxlLfF_8 {
+  stroke-dasharray: 17 19;
+  stroke-dashoffset: 18;
+}
+.fancy svg .NFNxlLfF_9 {
+  stroke-dasharray: 40 42;
+  stroke-dashoffset: 41;
+}
+.fancy svg .NFNxlLfF_10 {
+  stroke-dasharray: 37 39;
+  stroke-dashoffset: 38;
+}
+
+@keyframes NFNxlLfF_draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes NFNxlLfF_fade {
+  0% {
+    stroke-opacity: 1;
+  }
+  92.3076923076923% {
+    stroke-opacity: 1;
+  }
+  100% {
+    stroke-opacity: 0;
+  }
+}
