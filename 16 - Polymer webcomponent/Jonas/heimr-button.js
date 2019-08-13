@@ -1,4 +1,4 @@
-import { LitElement, html, css } from '@polymer/lit-element';
+import { LitElement, html, css } from 'lit-element';
 
 /**
  * `heimr-button`
@@ -10,7 +10,7 @@ import { LitElement, html, css } from '@polymer/lit-element';
  */
 class HeimrButton extends LitElement {
   static get styles() {
-    return [ css`
+    return css`
       :host {
         display: block;
         font-family: sans-serif;
@@ -34,7 +34,7 @@ class HeimrButton extends LitElement {
         vertical-align: middle;
         margin-right: .5rem;
       }
-    ` ];
+    `;
   }
 
   static get properties() {
