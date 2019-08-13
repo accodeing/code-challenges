@@ -1,4 +1,4 @@
-import { LitElement, html } from '@polymer/lit-element';
+import { LitElement, html, css } from '@polymer/lit-element';
 
 /**
  * `heimr-button`
@@ -9,19 +9,8 @@ import { LitElement, html } from '@polymer/lit-element';
  * @demo demo/index.html
  */
 class HeimrButton extends LitElement {
-  static get properties() {
-    return { icon: String };
-  }
-
-  render(){
-    /**
-     * `render` must return a lit-html `TemplateResult`.
-     *
-     * To create a `TemplateResult`, tag a JavaScript template literal
-     * with the `html` helper function:
-     */
-    return html`
-    <style>
+  static get styles() {
+    return [ css`
       :host {
         display: block;
         font-family: sans-serif;
@@ -45,11 +34,23 @@ class HeimrButton extends LitElement {
         vertical-align: middle;
         margin-right: .5rem;
       }
-    </style>
-    ${this.icon?
+    ` ];
+  }
+
+  static get properties() {
+    return { icon: String };
+  }
+
+  render(){
+    /**
+     * `render` must return a lit-html `TemplateResult`.
+     *
+     * To create a `TemplateResult`, tag a JavaScript template literal
+     * with the `html` helper function:
+     */
+    return this.icon ?
       html`<button><img src="${this.icon}" /><slot></slot></button>`:
-      html`<button><slot></slot></button>`}
-    `;
+      html`<button><slot></slot></button>`;
   }
 }
 
