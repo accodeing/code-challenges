@@ -1,0 +1,8 @@
+{
+  "name": "heimr-button",
+  "description": "Simple Polymer litElement version of the button code challenge",
+  "main": "heimr-button.js",
+  "dependencies": {
+    "lit-element": "^2.2.1"
+  }
+}
