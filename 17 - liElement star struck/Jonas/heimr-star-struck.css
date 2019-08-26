@@ -1,0 +1,206 @@
+:host {
+  display: inline-block;
+}
+
+@keyframes star_struck {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+    fill: var(--heimr-star-struck__unlit-fill, #b7dff2);
+    stroke: var(--heimr-star-struck__unlit-stroke, #9ac5da);
+  }
+  12.5% {
+    opacity: 0.8;
+    transform: scale(0.9);
+  }
+  25% {
+    opacity: 0.5;
+    transform: scale(0.75);
+    fill: var(--heimr-star-struck__unlit-fill, #b7dff2);
+    stroke: var(--heimr-star-struck__unlit-stroke, #9ac5da);
+  }
+  37.5% {
+    opacity: 0;
+    transform: scale(0);
+    fill: var(--heimr-star-struck__unlit-fill, #b7dff2);
+    stroke: var(--heimr-star-struck__unlit-stroke, #9ac5da);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(0.75);
+    fill: var(--heimr-star-struck__lit-fill, #fed702);
+    stroke: var(--heimr-star-struck__lit-stroke, #e8c400);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  87.5% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes star_unstruck {
+  0% {
+    transform: scale(1);
+    fill: var(--heimr-star-struck__lit-fill, #fed702);
+    stroke: var(--heimr-star-struck__lit-stroke, #e8c400);
+  }
+
+  40% {
+    transform: scale(.75);
+    fill: var(--heimr-star-struck__lit-fill, #fed702);
+    stroke: var(--heimr-star-struck__lit-stroke, #e8c400);
+  }
+
+  50% {
+    transform: scale(.75);
+    fill: var(--heimr-star-struck__unlit-fill, #b7dff2);
+    stroke: var(--heimr-star-struck__unlit-stroke, #9ac5da);
+  }
+
+  90% {
+    transform: scale(1.2);
+  }
+
+  95% {
+    transform: scale(.95);
+  }
+
+  100% {
+    transform: scale(1);
+    fill: var(--heimr-star-struck__unlit-fill, #b7dff2);
+    stroke: var(--heimr-star-struck__unlit-stroke, #9ac5da);
+  }
+}
+
+@keyframes star_nova {
+  0% {
+    width: 0em;
+    height: 0em;
+    border: 0em solid var(--heimr-star-struck__lit-fill, #fed702);
+  }
+  50% {
+    width: 1em;
+    height: 1em;
+    border: .5em solid var(--heimr-star-struck__lit-fill, #fed702);
+  }
+  98% {
+    width: 1.3em;
+    height: 1.3em;
+    border: .0625em solid var(--heimr-star-struck__lit-fill--light, #ffee94);
+  }
+  99% {
+    width: 1.3em;
+    height: 1.3em;
+    border: 0em solid var(--heimr-star-struck__lit-fill--light, #ffee94)00;
+  }
+  100% {
+    border: 0em solid var(--heimr-star-struck__lit-fill--light, #ffee94);
+  }
+}
+
+@keyframes star_sparkles {
+  0% {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+  50% {
+    width: 225%;
+    height: 225%;
+    opacity: .75;
+    animation-timing-function: ease-in-out;
+  }
+  99% {
+    opacity: .5;
+    fill: var(--heimr-star-struck__lit-fill--light, #ffee94);
+  }
+  100% {
+    width: 250%;
+    height: 250%;
+    opacity: 0;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes star_more_sparkles {
+  0% {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+  50% {
+    width: 250%;
+    height: 250%;
+    opacity: .75;
+    animation-timing-function: ease-in-out;
+  }
+  99% {
+    opacity: .5;
+    fill: var(--heimr-star-struck__lit-fill--light, #ffee94);
+  }
+  100% {
+    width: 275%;
+    height: 275%;
+    opacity: 0;
+    animation-timing-function: ease-out;
+  }
+}
+
+.striking_star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 1em;
+  height: 1em;
+  position: relative;
+  fill: var(--heimr-star-struck__unlit-fill, #b7dff2);
+  stroke: var(--heimr-star-struck__unlit-stroke, #9ac5da);
+}
+
+.striking_star .star {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  animation: star_unstruck 200ms 1;
+}
+
+.striking_star .sparkles,
+.striking_star .more_sparkles {
+  position: absolute;
+  width: 0em;
+  height: 0em;
+  fill: var(--heimr-star-struck__lit-fill, #fed702);
+  stroke: var(--heimr-star-struck__lit-stroke, #e8c400);
+}
+
+.striking_star.struck {
+  fill: var(--heimr-star-struck__lit-fill, #fed702);
+  stroke: var(--heimr-star-struck__lit-stroke, #e8c400);
+}
+
+.striking_star.struck .star {
+  animation: star_struck 600ms 1;
+}
+
+.striking_star.struck .sparkles {
+  animation: star_sparkles 400ms 1;
+  animation-delay: 150ms;
+}
+
+.striking_star.struck .more_sparkles {
+  transform: rotate(135deg);
+  animation: star_more_sparkles 400ms 1;
+}
+
+.striking_star.struck::after {
+  position: absolute;
+  box-sizing: border-box;
+  content: "";
+  border-radius: 50%;
+  animation: star_nova 300ms 1;
+}
