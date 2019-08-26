@@ -1,0 +1,17 @@
+{
+  "name": "heimr-star-struck",
+  "description": "Simple Polymer litElement version of the star struck component",
+  "main": "heimr-star-struck.js",
+  "scripts": {
+    "build": "NODE_PATH=./src node_modules/rollup/dist/bin/rollup -c rollup.config.js"
+  },
+  "dependencies": {
+    "lit-element": "^2.2.1"
+  },
+  "devDependencies": {
+    "rollup": "^1.20.2",
+    "rollup-plugin-inline-lit-element": "^0.0.3",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^2.0.3"
+  }
+}
