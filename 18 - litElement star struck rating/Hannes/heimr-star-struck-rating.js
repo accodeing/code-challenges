@@ -1,33 +1,72 @@
-import { LitElement } from 'lit-element';
+import { LitElement } from 'lit-element'
 
 class LitElementStarStruckRating extends LitElement {
-    constructor() {
-        super();
-        this.stars = this.getAttribute("stars");
-        this.rating = this.getAttribute("rating") || 0;
+  constructor() {
+    super()
+    this._stars = this.getAttribute('stars')
+    this._rating = this.getAttribute('rating') || 0
+    console.log(this._stars)
+    console.log(this._rating)
+  }
+
+  static get properties() {
+    return {
+      stars: { type: Number },
+      rating: { type: Number },
     }
-    static get properties() {
-        return {
-            stars: { type: Number },
-            rating: { type: Number },
-        };
+  }
+
+  set rating(val) {
+    const oldValue = this._rating
+    let newValue = Math.min(this._stars, parseInt(val) || 0)
+    const change = newValue - oldValue
+    if (change === 0 && newValue === 1) {
+      newValue = 0
     }
-    set rating(val) {
-        this.old_value = this._rating;
-        let new_value = Math.min(this.stars, parseInt(val) || 0);
-        const change = new_value - this.rating;
-        if (change === 0 && new_value === 1) {
-            new_value = 0;
-        }
-        this._rating = new_value;
-        this.requestUpdate("rating", old_value);
+    this._rating = newValue
+    this.requestUpdate('rating', oldValue)
+  }
+
+  set stars(val) {
+    const oldValue = this._stars
+    this._stars = parseInt(val) || 5
+    this._rating = Math.min(this._rating, this._stars)
+    this.requestUpdate('stars', oldValue)
+    this.renderStars()
+  }
+
+  renderStars() {
+    Array.from(this.shadowRoot.children).forEach((child) => {
+      this.shadowRoot.removeChild(child)
+    })
+
+    for (let i = 1; i <= this._stars; i++) {
+      const child = document.createElement('heimr-star-struck')
+      child.addEventListener('change', () => {
+        this._rating = i
+      })
+      this.shadowRoot.appendChild(child)
     }
-    set stars(val) {
-        this.old_value = this._stars;
-        this._stars = parseInt(val) || 5;
-        this.rating(Math.min(this._rating, this._stars));
-        this.requestUpdate("stars", old_value);
-    }
+    this.after_rating_change(0)
+  }
+
+  after_rating_change(change) {
+    let rating
+
+    Array.from(this.shadowRoot.children).forEach((child, index) => {
+      child.struck = index < this._rating ? true : false
+    })
+
+    this.dispatchEvent(
+      new CustomEvent('rating_change', {
+        detail: { rating: this._rating, max: this._stars },
+        composed: true,
+        bubbles: true,
+      })
+    )
+  }
 }
-window.customElements.define("lit-heimr-star-struck", LitElementStarStruckRating);
-//# sourceMappingURL=heimr-star-struck-rating.js.map
+window.customElements.define(
+  'lit-heimr-star-struck-rating',
+  LitElementStarStruckRating
+)
