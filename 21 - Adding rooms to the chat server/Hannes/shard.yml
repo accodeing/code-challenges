@@ -1,0 +1,18 @@
+name: kemal-chat
+version: 0.1.0
+
+authors:
+  - Hannes Elvemyr <hannes@accodeing.com>
+
+targets:
+  kemal-chat:
+    main: src/kemal-chat.cr
+
+dependencies:
+  kemal:
+    github: sdogruyol/kemal
+    branch: master
+
+crystal: 0.30.1
+
+license: MIT
