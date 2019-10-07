@@ -1,3 +1,5 @@
+require './months'
+
 describe 'months' do
   context 'with a one month period' do
     subject { months('2019-01-01', '2019-01-31') }
