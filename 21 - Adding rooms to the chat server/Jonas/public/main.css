@@ -1,0 +1,81 @@
+#login {
+  display: flex;
+  justify-content: center;
+}
+
+#login form {
+  background: #fdd;
+  width: 20rem;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px #855;
+  padding: 1rem 2.5rem;
+}
+
+input {
+  padding: 0.25rem 1rem;
+}
+
+input[type="submit"] {
+  display: inline-block;
+  border: 1px solid #855;
+}
+
+#chat form {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem 2.5rem;
+  background: #fdd;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px #855;
+}
+
+#msg {
+  width: calc(100% - 2rem - 73px);
+}
+
+#rooms ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+#rooms ul li {
+  display: none;
+}
+
+#rooms ul li.current {
+  display: block;
+}
+
+#tabs {
+  width: 100%;
+  height: 2.5rem;
+  box-sizing: border-box;
+  padding: 0.5rem 2rem;
+  position: absolute;
+  bottom: 57px;
+  left: 0;
+}
+
+#tabs ul {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+#tabs ul li {
+  background: #855;
+  color: #ddd;
+  padding: 0.5rem 2rem 1rem;
+  margin-right: 0.5rem;
+  border: 1px solid #855;
+  border-radius: 2px;
+}
+
+#tabs ul li.current {
+  background: #faa;
+  color: #000;
+}
