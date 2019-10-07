@@ -61,6 +61,12 @@ describe 'months' do
     end
   end
 
+  describe 'with whole 2019' do
+    subject { months( start_date: Date.parse('2019-01-01'), end_date: Date.parse('2019-12-31') ) }
+
+    it { is_expected.to eq 12 }
+  end
+
   describe 'with a 13 months period' do
     subject { months( start_date: Date.parse('2019-04-01'), end_date: Date.parse('2020-04-30') ) }
 
