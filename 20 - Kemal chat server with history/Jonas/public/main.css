@@ -1,0 +1,36 @@
+#login {
+  display: flex;
+  justify-content: center;
+}
+
+#login form {
+  background: #fdd;
+  width: 20rem;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px #855;
+  padding: 1rem 2.5rem;
+}
+
+input {
+  padding: 0.25rem 1rem;
+}
+
+input[type="submit"] {
+  display: inline-block;
+  border: 1px solid #855;
+}
+
+#chat form {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem 2.5rem;
+  background: #fdd;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px #855;
+}
+
+#msg {
+  width: calc(100% - 2rem - 73px);
+}

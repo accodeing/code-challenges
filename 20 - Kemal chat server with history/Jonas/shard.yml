@@ -1,0 +1,19 @@
+name: Server
+version: 0.1.0
+
+authors:
+  - Jonas Schubert Erlandsson <jonas.schubert.erlandsson@gmail.com>
+
+targets:
+  server:
+    main: src/server.cr
+
+crystal: 0.30.1
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+  slang:
+    github: jeromegn/slang
+
+license: MIT
