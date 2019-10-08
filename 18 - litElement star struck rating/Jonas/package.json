@@ -1,0 +1,13 @@
+{
+  "name": "heimr-star-struck",
+  "description": "Simple Polymer litElement version of the star struck component",
+  "main": "heimr-star-struck.js",
+  "dependencies": {
+    "haunted": "^4.5.4",
+    "lit-element": "^2.2.1"
+  },
+  "devDependencies": {
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^2.0.3"
+  }
+}
