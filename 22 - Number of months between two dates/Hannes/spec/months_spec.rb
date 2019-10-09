@@ -53,4 +53,10 @@ describe 'months' do
 
     it { is_expected.to eq 12 }
   end
+
+  context 'with different years but less than 12 months' do
+    subject { months('2018-08-15', '2019-03-15') }
+
+    it { is_expected.to eq 7.03 }
+  end
 end
