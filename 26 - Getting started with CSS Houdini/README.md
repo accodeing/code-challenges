@@ -7,6 +7,6 @@ If you have time left, try using multiple examples or try writing your own :)
 
 # Solutions
 
-- [starter](starter/)
-- [Jonas'](Jonas/)
-- [Hannes'](Hannes/)
+- [starter](starter/)   
+- [Jonas'](Jonas/)   
+- [Hannes'](Hannes/)   
