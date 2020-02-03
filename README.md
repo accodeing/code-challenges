@@ -29,3 +29,7 @@ Each challenge has different rules and restraints and serve different purpouses.
 | 25  | [Canvas Christmas](/code-challenges/25%20-%20Canvas%20christmas)              | Animate a nice winter scene with falling snow using canvas 2D.                                                                                    | Web                               | Jonas      |
 | 26  | [Getting started with CSS Houdini](/code-challenges/26%20-%20Getting%20started%20with%20CSS%20Houdini)              | It's time to check out the new fancy CSS Houdini                                                                                    | Web                               | Hannes      |
 | 27  | [Hello Django](/code-challenges/27%20-%20Hello%20Django)              | A hello world in Django | Web                               | Hannes      |
+
+| 28  | [Hello again, Django](/code-challenges/28%20-%20Hello%20again%2C%20Django)              | Continue with Django | Web                               | Hannes      |
+
+| 29  | [Elm chat](/code-challenges/tree/master/29%20-%20Elm%20chat)              | A simple chat app in Elm | Elm                               | Hannes      |
