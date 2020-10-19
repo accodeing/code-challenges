@@ -31,3 +31,4 @@ Each challenge has different rules and restraints and serve different purpouses.
 | 27  | [Hello Django](/code-challenges/27%20-%20Hello%20Django) | A hello world in Django | Web | Hannes |
 | 28  | [Hello again, Django](/code-challenges/28%20-%20Hello%20again%2C%20Django) | Continue with Django | Web | Hannes |
 | 29  | [Elm chat](/code-challenges/tree/master/29%20-%20Elm%20chat) | A simple chat app in Elm | Elm | Hannes |
+| 30  | [BEMify me](/code-challenges/tree/master/30%20-%20BEMify%20me) | A BEM challenge | CSS | Hannes |

@@ -1,0 +1,219 @@
+:root {
+  --primary: #2b3252;
+  --secondary: #fad744;
+  --accent: #ef5455;
+  --white: #eee;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Righteous', cursive;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.a {
+  display: none;
+}
+
+.l {
+  background-color: var(--secondary);
+  box-shadow: 0 0 0 transparent;
+  height: 1rem;
+  left: 0;
+  overflow: hidden;
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 200ms ease-out;
+  z-index: 1;
+}
+
+.m {
+  box-shadow: 0 0 50px #555;
+  height: 50vh;
+}
+
+.b {
+  text-align: right;
+}
+
+.c {
+  display: inline-block;
+  width: 1rem;
+}
+
+.d {
+  display: none;
+  width: 1rem;
+}
+
+.m .c {
+  display: none;
+}
+
+.m .d {
+  display: inline-block;
+}
+
+.e {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+}
+
+.f {
+  padding: 0.5rem 0;
+}
+
+.f:hover {
+  background-color: var(--white);
+}
+
+.g {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 3rem 1rem 2rem;
+}
+
+.h {
+  margin: 0;
+  position: relative;
+}
+
+.i {
+  width: 100%;
+}
+
+.j {
+  bottom: 0;
+  color: #fff;
+  font-size: 0.75rem;
+  font-style: italic;
+  left: 0;
+  padding: 0.5rem 1rem;
+  position: absolute;
+}
+
+.n {
+  clear: both;
+}
+
+.k {
+  background-color: black;
+  color: ivory;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+.p {
+  margin-bottom: 1rem;
+}
+
+.q {
+  background: black;
+  color: ivory;
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.t {
+  font-style: italic;
+}
+
+.u {
+  color: var(--accent);
+}
+
+@media (min-width: 768px) {
+  .l {
+    height: auto;
+    transition: none;
+  }
+
+  .b {
+    display: none;
+  }
+
+  .e {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 960px;
+  }
+
+  .g {
+    padding: 4rem 1rem 2rem;
+  }
+
+  .h {
+    float: left;
+    margin: 1rem 2rem 1rem 0;
+    width: 50%;
+  }
+}
+
+@media (min-width: 960px) {
+  .a {
+    display: inherit;
+    height: 6rem;
+    margin: 2rem auto 1rem;
+  }
+
+  .l {
+    position: static;
+  }
+
+  .f {
+    padding: 0.5rem 1rem;
+  }
+
+  .g {
+    padding: 1rem 0 2rem 0;
+  }
+
+  .o {
+    margin: 0 auto;
+    max-width: 960px;
+  }
+
+  .q {
+    columns: 2;
+  }
+
+  .r {
+    margin-top: 0;
+  }
+
+  .s {
+    text-align: justify;
+  }
+}
