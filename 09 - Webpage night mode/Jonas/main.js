@@ -9,7 +9,6 @@ document.querySelector('.theme-switcher__checkbox').addEventListener('change', e
 });
 
 if( prefersDarkScheme ){
-  console.log('Dark mode');
   document.querySelector('.theme-switcher__checkbox').checked="true";
   document.documentElement.classList.add('dark-mode');
 }
