@@ -129,6 +129,11 @@
   font-size: 1rem;
 }
 
+.theme-switcher__text:first-child {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
 .theme-switcher__toggle {
   display: inline-block;
   height: 34px;
