@@ -12,14 +12,14 @@
   --text: #fff;
 }
 
-html {
+.document {
   height: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
-body {
+.page {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -29,7 +29,7 @@ body {
   color: var(--text);
 }
 
-h1, h2, h3 {
+.header {
   font-family: 'Righteous', cursive;
 }
 
@@ -121,12 +121,19 @@ h1, h2, h3 {
 .theme-switcher__wrapper {
   display: flex;
   align-items: center;
-
-  em {
-    margin-left: 10px;
-    font-size: 1rem;
-  }
+  padding: 1em 0 3em 0;
 }
+
+.theme-switcher__text {
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+.theme-switcher__text:first-child {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
 .theme-switcher__toggle {
   display: inline-block;
   height: 34px;
