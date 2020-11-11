@@ -1,0 +1,40 @@
+<!-- 
+How do we reuse a styled navigation in other blocks? 
+Here we want the header>nav>li to be used again in the footer, 
+but with modifiers to fit the needs in the comments 
+-->
+<header class"header">
+  <nav class="menu">
+    <!-- Styled as hamburger -->
+    <ul class="menu__items">
+      <!-- Styled as
+        block
+        2px margin
+        color white
+        10px padding -->
+      <li class="menu__item"></li>
+      <li class="menu__item"></li>
+      <li class="menu__item"></li>
+    </ul>
+  </nav>
+</header>
+<main class="main">
+  <article>
+    <!-- content -->
+  </article>
+</main>
+<footer class="footer">
+  <nav class="menu"><!-- add modifier menu--in-line if needed -->
+    <ul class="menu__items"><!-- add modifier  menu__items--in-line if needed -->
+      <!-- Styled as always visible -->
+      <!-- Styled as 
+        inline-block
+        4px margin
+        color white
+        10px padding -->
+      <li class="menu__item menu__item--in-line"></li>
+      <li class="menu__item menu__item--in-line"></li>
+      <li class="menu__item menu__item--in-line"></li>
+    </ul>
+  </nav>
+</footer>
