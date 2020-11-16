@@ -1,0 +1,118 @@
+// This should be used as our default font, for this
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300&display=swap');
+
+/**
+ * Here we define our CSS custom properties. 
+ * Also we declare the standards for our oma-components here, apart from their inherited style. Is that something that we should take in mind?
+ * We want to declare values for fonts, font-sizes, line-height, z-index,
+ * primary & secondary-colors, and whatever you can think of
+ */
+
+:root {
+  --foo: 'bar';
+}
+
+/**
+ *  * Before we had default styling for elements here. Now we could use this space for something different. Any ideas?
+ */
+
+a {
+  background: var(--foo);
+}
+
+/**
+ *  * Before we had placeholder classes here. Since we try to move away from the @extend-method we can replace this space aswell. 
+ *  I like the idea of having resets at hand (like we did with %button-reset in the current stylesheet), so maybe something 
+ * like that can be useful, but in another manner?
+ */
+
+%button-reset {
+  background: var(--foo);
+}
+
+/**
+ *  * Here we had our defaulted classes. I copied some that I thought could remain. Now this should also include
+ *  classes for headings(h1-h5), row-styling for grid-rows, footer/header, and our main - which should be our default wrapper instead of using something like `section`
+ */
+
+.footer {
+  background: var(--foo);
+}
+
+.header {
+  background: var(--foo);
+}
+
+.heimr-menu {
+  display: none;
+
+  .size-1200 & {
+    display: block;
+  }
+}
+
+.heimr-menu__item {
+  display: block;
+
+  .size-1200 & {
+    display: inline-block;
+    padding: var(--oma-page__space--extra-small);
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.heimr-menu--open {
+  display: inline-block;
+}
+
+.heimr-hamburger-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  line-height: 0.5;
+  outline: none;
+  padding: 0;
+
+  .size-1200 & {
+    display: none;
+  }
+}
+
+.heimr-hamburger-button--open {
+  font-size: 2.4rem;
+  line-height: 0.8;
+}
+
+.generated-content {
+  background: var(--foo);
+}
+
+.main {
+  background: var(--foo);
+}
+
+.row {
+  background: var(--foo);
+}
+
+/**
+ * RELATED TO MEDIA QUERIES
+ *
+ * Keep last in stylesheet
+ **/
+
+.size-900 {
+  --page__margin: var(--oma-page__space--medium);
+}
+
+.size-1200 {
+  --page__margin: 0;
+}

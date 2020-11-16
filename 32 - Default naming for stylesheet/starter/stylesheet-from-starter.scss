@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300&display=swap');
+
+:root {
+  --font: 'Montserrat', sans-serif;
+  --page__margin: var(--oma-page__space--small);
+}
+
+/**
+ *  * DEFAULT STYLING FOR ELEMENTS
+ *   */
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+body {
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: 400;
+  min-height: 100%;
+}
+
+button {
+  background: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  padding: 0;
+  width: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font);
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  max-width: 120ch;
+
+  &:not(:last-child) {
+    margin-bottom: var(--oma-page__space--small);
+  }
+}
+
+section {
+  @extend %page-margin;
+
+  margin-top: var(--oma-page__space--large);
+}
+
+/**
+ * PLACEHOLDER CLASSES
+ */
+
+%align-content-with-grid {
+  .size-1200 & {
+    margin-left: auto;
+    margin-right: auto;
+    width: var(--oma-grid__width);
+  }
+}
+
+%button-reset {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}
+
+%page-margin {
+  padding-left: var(--page__margin);
+  padding-right: var(--page__margin);
+}
+
+/**
+ * CLASSES
+ */
+
+.footer {
+  @extend %page-margin;
+
+  padding-top: var(--oma-page__space--small);
+  padding-bottom: var(--oma-page__space--small);
+}
+
+.header {
+  @extend %page-margin;
+
+  padding-bottom: var(--oma-page__space--small);
+  padding-top: var(--oma-page__space--small);
+}
+
+.header__title {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.heimr-menu {
+  display: none;
+
+  .size-1200 & {
+    display: block;
+  }
+}
+
+.heimr-menu__item {
+  display: block;
+
+  .size-1200 & {
+    display: inline-block;
+    padding: var(--oma-page__space--extra-small);
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.heimr-menu--open {
+  display: inline-block;
+}
+
+.heimr-hamburger-button {
+  @extend %button-reset;
+  font-size: 1.5rem;
+  line-height: 0.5;
+
+  .size-1200 & {
+    display: none;
+  }
+}
+
+.heimr-hamburger-button--open {
+  font-size: 2.4rem;
+  line-height: 0.8;
+}
+
+.page__heading {
+  font-size: 3rem;
+  font-variant: small-caps;
+  letter-spacing: 0.0625rem;
+  margin-bottom: var(--oma-page__space--small);
+}
+
+.row--with-theme-color {
+  background: steelblue;
+}
+
+.row--with-top-margin {
+  margin-top: var(--oma-page__space--large);
+}
+
+.section {
+  @extend %page-margin;
+
+  margin-top: var(--oma-page__space--large);
+}
+
+.section--full-width {
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: var(--oma-page__space--medium);
+  padding-left: var(--page__margin);
+  padding-right: var(--page__margin);
+  padding-top: var(--oma-page__space--medium);
+}
+
+/**
+ * RELATED TO MEDIA QUERIES
+ *
+ * Keep last in stylesheet
+ **/
+
+.size-900 {
+  --page__margin: var(--oma-page__space--medium);
+}
+
+.size-1200 {
+  --page__margin: 0;
+}
