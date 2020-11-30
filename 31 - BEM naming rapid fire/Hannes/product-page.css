@@ -1,0 +1,18 @@
+.breadcrumbs {
+  margin-top: var(--section__margin-top);
+  margin-bottom: var(--section__margin-top);
+}
+
+.product {
+  margin-top: var(--section__margin-top);
+  margin-bottom: var(--section__margin-top);
+}
+
+.main__section {
+  margin-top: var(--section__margin-top);
+  margin-bottom: var(--section__margin-top);
+}
+
+.product__heading {
+  grid-columns: 1/-1;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <article>
+      <nav class="menu">
+        <button class="menu__button">
+          Menu
+          <span class="menu__opener">▼</span>
+        </button>
+        <ul class="menu__items">
+          <li class="menu__item">
+            <picture class="menu__icon">
+              <source srcset="/images/menu-icons/icon.webp" type="image/webp" />
+              <img src="/images/menu-icons/icon.png" />
+            </picture>
+            <a href="#" class="menu__link">Item</a>
+            <span>⌘1</span>
+          </li>
+          <li class="menu__item">
+            <picture class="menu__icon">
+              <source srcset="/images/menu-icons/icon.webp" type="image/webp" />
+              <img src="/images/menu-icons/icon.png" />
+            </picture>
+            <a href="#" class="menu__link">Item</a>
+            <span>⌘1</span>
+          </li>
+          <li class="menu__item">
+            <picture class="menu__icon">
+              <source srcset="/images/menu-icons/icon.webp" type="image/webp" />
+              <img src="/images/menu-icons/icon.png" />
+            </picture>
+            <a href="#" class="menu__link">Submenu</a>
+            <span class="menu__opener">▼</span>
+            <ul class="menu__items menu__items--sub-nav">
+              <!-- target menu__item inside with the modifier -->
+              <li class="menu__item">
+                <a href="#" class="menu__link">Item</a>
+                <span>⌘1</span>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Item</a>
+                <span>⌘1</span>
+              </li>
+              <li class="menu__item">
+                <picture class="menu__icon">
+                  <source
+                    srcset="/images/menu-icons/icon.webp"
+                    type="image/webp"
+                  />
+                  <img src="/images/menu-icons/icon.png" />
+                </picture>
+                <a href="#" class="menu__link">Submenu</a>
+                <span class="menu__opener">▼</span>
+                <ul class="menu__items menu__items--sub-nav">
+                  <!-- target menu__items inside with the modifier -->
+                  <li class="menu__item">
+                    <picture class="menu__icon">
+                      <source
+                        srcset="/images/menu-icons/icon.webp"
+                        type="image/webp"
+                      />
+                      <img src="/images/menu-icons/icon.png" />
+                    </picture>
+                    <a href="#" class="menu__link">Item</a>
+                    <span>⌘1</span>
+                  </li>
+                  <li class="menu__item">
+                    <picture class="menu__icon">
+                      <source
+                        srcset="/images/menu-icons/icon.webp"
+                        type="image/webp"
+                      />
+                      <img src="/images/menu-icons/icon.png" />
+                    </picture>
+                    <a href="#" class="menu__link">Item</a>
+                    <span>⌘1</span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </article>
+  </body>
+</html>
