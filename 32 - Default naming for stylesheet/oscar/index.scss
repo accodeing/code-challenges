@@ -1,0 +1,213 @@
+// This should be used as our default font, for this
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300&display=swap');
+
+/**
+ * Here we define our CSS custom properties. 
+ * Also we declare the standards for our oma-components here, apart from their inherited style. Is that something that we should take in mind?
+ * We want to declare values for fonts, font-sizes, line-height, z-index,
+ * primary & secondary-colors, and whatever you can think of
+ */
+
+:root {
+  --card-height: 48px;
+
+  // --font__heading--large: 2.25rem;
+  // --font__heading--medium: 1.75rem;
+  // --font__heading--small: 1.5rem;
+  // --font__heading--tiny: 1.15rem;
+  // --font__heading--miniscule: 0.7rem;
+
+  --main__primary-color: burlywood;
+  --main__secondary-color: blanchedalmond;
+  --main__detail-color: dodgerblue;
+  --main__line-height: 1.615;
+  --main__font-family--primary: 'Montserrat';
+  --main__font-family--secondary: 'Georgia';
+  --main__font-size: 16px;
+  --main__margin: 2em;
+
+  --oma-page__space--small: var(--main__margin);
+  --oma-page__space--medium: var(--main__margin);
+  --oma-page__space--large: var(--main__margin);
+
+  // --oma-link__color: inherit;
+  // --oma-link__margin: inherit;
+  // --oma-link__padding: inherit;
+  // --oma-link__text-decoration: inherit;
+
+  --z-index__behind: -1;
+  --z-index__default: 1;
+  --z-index__anti-collide: 2;
+  --z-index__top: 5;
+}
+
+/**
+ *  * Before we had default styling for elements here. Now we could use this space for something different. Any ideas?
+ */
+
+a {
+  background: var(--foo);
+}
+
+/**
+ *  * Before we had placeholder classes here. Since we try to move away from the @extend-method we can replace this space aswell. 
+ *  I like the idea of having resets at hand (like we did with %button-reset in the current stylesheet), so maybe something 
+ * like that can be useful, but in another manner?
+ */
+
+%button-reset {
+  background: var(--foo);
+}
+
+/**
+ *  * Here we had our defaulted classes. I copied some that I thought could remain. Now this should also include
+ *  classes for headings(h1-h5), row-styling for grid-rows, footer/header, and our main - which should be our default wrapper instead of using something like `section`
+ */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: var(--oma-page__space--medium);
+}
+
+.card {
+  background: #fafafa;
+  border-radius: 2px;
+  box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.23);
+  height: var(--card-height);
+  padding: var(--oma-page__space--small);
+}
+
+.divider {
+  background: gray;
+  border: none;
+  box-sizing: content-box;
+  height: 0.5px;
+  overflow: visible;
+}
+
+.footer {
+  margin-top: var(--oma-page__space--small);
+}
+
+.header {
+  margin-bottom: var(--oma-page__space--small);
+}
+
+.heimr-menu {
+  display: none;
+
+  .size-1200 & {
+    display: block;
+  }
+}
+
+.heimr-menu__item {
+  display: block;
+
+  .size-1200 & {
+    display: inline-block;
+    padding: var(--oma-page__space--extra-small);
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.heimr-menu--open {
+  display: inline-block;
+}
+
+.heimr-hamburger-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  line-height: 0.5;
+  outline: none;
+  padding: 0;
+
+  .size-1200 & {
+    display: none;
+  }
+}
+
+.heimr-hamburger-button--open {
+  font-size: 2.4rem;
+  line-height: 0.8;
+}
+
+.generated-content {
+  & > p {
+    @extend .paragraph;
+    margin: 0 1rem;
+  }
+
+  & > h1 {
+    @extend .main__heading;
+    @extend .main__heading--large;
+  }
+
+  & > h2 {
+    @extend .main__heading;
+  }
+
+  // ...
+}
+
+// .main--centered {
+//   margin: 0 auto;
+// }
+
+.main__heading {
+  color: black;
+  font-family: var(--main__font-family--primary);
+  font-size: var(--font__heading--medium);
+}
+
+.main__heading--large {
+  font-size: var(--font__heading--large);
+}
+
+.main__heading--small {
+  font-size: var(--font__heading--small);
+}
+
+.main__heading--tiny {
+  font-size: var(--font__heading--tiny);
+}
+
+.main__heading--miniscule {
+  font-size: var(--font__heading--miniscule);
+}
+
+.main__section {
+  margin: 0 var(--oma-page__space--small);
+}
+
+.row--with-theme-color {
+  background: var(--main__primary-color);
+}
+
+.row--centered {
+  margin: 0 auto;
+}
+
+/**
+ * RELATED TO MEDIA QUERIES
+ *
+ * Keep last in stylesheet
+ **/
+
+.size-900 {
+  --page__margin: var(--oma-page__space--medium);
+}
+
+.size-1200 {
+  --page__margin: 0;
+}
