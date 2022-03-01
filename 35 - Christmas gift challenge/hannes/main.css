@@ -1,0 +1,48 @@
+:root {
+  --space: 1rem;
+}
+
+body {
+  background-color: #ac474b;
+}
+
+.gift {
+  width: 178px;
+}
+
+.gift__package-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: var(--space);
+}
+
+.gift__package {
+  background-color: white;
+  height: 80px;
+  width: 80px;
+}
+
+.gift__strings {
+  display: flex;
+  margin-bottom: var(--space);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+}
+
+.gift__string {
+  border: 10px solid white;
+  width: 30px;
+  height: 30px;
+  --border-radius: 30px;
+}
+
+.gift__string--left {
+  border-radius: var(--border-radius) var(--border-radius) 0
+    var(--border-radius);
+}
+
+.gift__string--right {
+  border-radius: var(--border-radius) var(--border-radius) var(--border-radius)
+    0;
+}
