@@ -1,0 +1,42 @@
+body {
+  /* background-image: url('https://github.com/accodeing/code-challenges/raw/master/35%20-%20Christmas%20gift%20challenge/christmas-gift.png');
+  background-position: center 41%;
+  background-repeat: no-repeat;
+  background-size: 42%; */
+  background: #ac474b;
+}
+
+.present {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: calc( 50vh - 100px ) auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.present::before, .present::after {
+  content: '';
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: -84px;
+  border: 15px solid #fff;
+  border-radius: 50%;
+}
+
+.present::before {
+  left: 46%;
+  border-bottom-left-radius: 0;
+}
+
+.present::after {
+  right: 48%;
+  border-bottom-right-radius: 0;
+}
+
+.present > div {
+  background-color: #fff;
+}
