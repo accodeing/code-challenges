@@ -1,0 +1,46 @@
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  width: 100vw;
+}
+
+.card-grid {
+  background-color: rgb(172, 71, 75);
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 50px 130px;
+}
+
+.card-grid__box {
+  background-color: white;
+  height: 60px;
+  width: 60px;
+}
+
+.card-grid__top {
+  display: flex;
+  grid-column: 1/-1;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo__part {
+  border: 12px solid white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.logo__part-left {
+  border-radius: 20px 15px 0 20px;
+}
+
+.logo__part-right {
+  border-radius: 15px 20px 20px 0;
+}
