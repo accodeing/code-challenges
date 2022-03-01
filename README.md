@@ -33,3 +33,7 @@ Each challenge has different rules and restraints and serve different purpouses.
 | 29  | [Elm chat](29%20-%20Elm%20chat) | A simple chat app in Elm | Elm | Hannes |
 | 30  | [BEMify me](30%20-%20BEMify%20me) | A BEM challenge | CSS | Hannes |
 | 31  | [BEM naming rapid fire](31%20-%20BEM%20naming%20rapid%20fire) | A collection of BEM challenge | HTML | Many |
+| 32  | [Data structures](31%20-%20BEM%20naming%20rapid%20fire) | A collection of BEM challenge | HTML | Many |
+| 33  | [Data structures again](31%20-%20BEM%20naming%20rapid%20fire) | A collection of BEM challenge | HTML | Many |
+| 34  | [Default naming for stylesheet](31%20-%20BEM%20naming%20rapid%20fire) | A collection of BEM challenge | HTML | Many |
+| 34  | [35 - Christmas gift challenge](31%20-%20BEM%20naming%20rapid%20fire) | A collection of BEM challenge | HTML | Many |
