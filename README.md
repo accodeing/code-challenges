@@ -36,4 +36,5 @@ Each challenge has different rules and restraints and serve different purpouses.
 | 32  | [Data structures](32%20-%20Data%20structures) | Some data structures | HTML | Jonas |
 | 33  | [Data structures again](33%20-%20Data%20structures%20again) | More data structures | HTML | Jonas |
 | 34  | [Default naming for stylesheet](34%20-%20Default%20naming%20for%20stylesheet) | An exercise for naming things in CSS | HTML & CSS | Hannes |
-| 34  | [Christmas gift challenge](35%20-%20Christmas%20gift%20challenge) | Create a christmas gift with HTML & CSS | HTML & CSS | Hannes |
+| 35  | [Christmas gift challenge](35%20-%20Christmas%20gift%20challenge) | Create a christmas gift with HTML & CSS | HTML & CSS | Hannes |
+| 36  | [Narcissistic number](36%20-%20Narcissistic%20number) | Problem solution and code readability | Free Choice | Hannes |
