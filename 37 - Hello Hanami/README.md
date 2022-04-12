@@ -1,7 +1,7 @@
 # Hello Hanami!
 It's time for us to get to know the Ruby framework [Hanami](https://hanamirb.org/) better.
 
-Your task is to create a "Hello World" application in Hanami 2.0.
+Your task is to create a "Hello World" application in Hanami 2.0. Use the [Hanami 2.0 tempalate](https://github.com/hanami/hanami-2-application-template) and play along :)
 
 ## Short introduction to Hanami 2.0
 The current stable version of Hanami is version 1.3, which the [documentation](https://guides.hanamirb.org/) covers.
