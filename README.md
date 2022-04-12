@@ -28,7 +28,7 @@ Each challenge has different rules and restraints and serve different purpouses.
 | 14  | [CSS Star Struck](14%20-%20CSS%20Star%20Struck) | Create an animated favorite star using web technologies. | Web | Jonas |
 | 25  | [Canvas Christmas](25%20-%20Canvas%20christmas) | Animate a nice winter scene with falling snow using canvas 2D. | Web | Jonas |
 | 26  | [Getting started with CSS Houdini](26%20-%20Getting%20started%20with%20CSS%20Houdini) | It's time to check out the new fancy CSS Houdini | Web | Hannes |
-| 27  | [Hello Django](27%20-%20Hello%20Django) | A hello world in Django | Web | Hannes |
+| 27  | [Hello Django](27%20-%20Hello%20Django) | A Hello World in Django | Web | Hannes |
 | 28  | [Hello again, Django](28%20-%20Hello%20again%2C%20Django) | Continue with Django | Web | Hannes |
 | 29  | [Elm chat](29%20-%20Elm%20chat) | A simple chat app in Elm | Elm | Hannes |
 | 30  | [BEMify me](30%20-%20BEMify%20me) | A BEM challenge | CSS | Hannes |
@@ -38,3 +38,4 @@ Each challenge has different rules and restraints and serve different purpouses.
 | 34  | [Default naming for stylesheet](34%20-%20Default%20naming%20for%20stylesheet) | An exercise for naming things in CSS | HTML & CSS | Hannes |
 | 35  | [Christmas gift challenge](35%20-%20Christmas%20gift%20challenge) | Create a christmas gift with HTML & CSS | HTML & CSS | Hannes |
 | 36  | [Narcissistic number](36%20-%20Narcissistic%20number) | Problem solution and code readability | Free Choice | Hannes |
+| 37  | [Hello Hanami](37%20-%20Hello%20Hanami) | A Hello World in Hanami | Hanami 2.0 | Hannes |
