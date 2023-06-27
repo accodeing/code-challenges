@@ -39,3 +39,4 @@ Each challenge has different rules and restraints and serve different purpouses.
 | 35  | [Christmas gift challenge](35%20-%20Christmas%20gift%20challenge) | Create a christmas gift with HTML & CSS | HTML & CSS | Hannes |
 | 36  | [Narcissistic number](36%20-%20Narcissistic%20number) | Problem solution and code readability | Free Choice | Hannes |
 | 37  | [Hello Hanami](37%20-%20Hello%20Hanami) | A Hello World in Hanami | Hanami 2.0 | Hannes |
+| 38  | [A Game of Chess](37%20-%20A%20Game%20of%20Chess) | A CSS challenge with AI | HTML & CSS | Hannes |
