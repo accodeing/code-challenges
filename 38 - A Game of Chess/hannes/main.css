@@ -1,0 +1,71 @@
+/* Container to hold the board */
+.chessboard {
+  width: 100%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  border: 3px solid #333;
+  position: relative;
+}
+
+/* Individual cells */
+.cell {
+  width: 100%;
+  padding-bottom: 100%; /* 1:1 Aspect Ratio */
+  position: relative; /* If you want text inside of it */
+}
+
+.cell::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #333;
+  background-color: #eee;
+}
+
+.cell.black::before {
+  background-color: #333;
+}
+
+/* Make it responsive */
+@media (max-width: 400px) {
+  .chessboard {
+    border-width: 1px;
+  }
+
+  .cell::before {
+    border-width: 0.5px;
+  }
+}
+
+.piece {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5em;
+  pointer-events: none;
+}
+
+@media (max-width: 600px) {
+  .piece {
+    font-size: calc(
+      2vw + 2vh + 1vmin
+    ); /* Increase the size for small screens if needed */
+  }
+}
+
+.white-piece {
+  color: #fff;
+}
+
+.black-piece {
+  color: #000;
+}
