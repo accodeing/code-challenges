@@ -1,0 +1,166 @@
+:root {
+  --unit: min(1vh, 1vw);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(2 * var(--unit));
+  box-sizing: border-box;
+}
+
+.chess_board {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 90vh;
+  max-height: 90vw;
+  padding: calc(5 * var(--unit));
+  aspect-ratio: 1;
+  margin: 0 auto;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  background-image: url(background.webp);
+  background-size: calc(100 * var(--unit)) calc(100 * var(--unit));
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.chess_board__row {
+  display: flex;
+  width: 100%;
+  aspect-ratio: 8/1;
+}
+
+.chess_board__square {
+  aspect-ratio: 1;
+  width: calc(12.5 * var(--unit));
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.75);
+  color: transparent !important;
+}
+
+.chess_board__row:nth-child(2n) .chess_board__square:nth-child(2n + 1),
+.chess_board__row:nth-child(2n + 1) .chess_board__square:nth-child(2n) {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+}
+
+/* Numbering */
+
+.chess_board__row:nth-child(1) .chess_board__square:before,
+.chess_board__row:nth-child(8) .chess_board__square:before {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.75);
+  width: calc((100% - (10 * var(--unit))) / 8);
+  height: calc(5 * var(--unit));
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.chess_board__row:nth-child(1) .chess_board__square:before {
+  top: 0;
+}
+
+.chess_board__row:nth-child(8) .chess_board__square:before {
+  bottom: 0;
+}
+
+.chess_board__row:nth-child(1) .chess_board__square:nth-child(1):before,
+.chess_board__row:nth-child(8) .chess_board__square:nth-child(1):before {
+  content: "A";
+}
+
+.chess_board__row:nth-child(1) .chess_board__square:nth-child(2):before,
+.chess_board__row:nth-child(8) .chess_board__square:nth-child(2):before {
+  content: "B";
+}
+
+.chess_board__row:nth-child(1) .chess_board__square:nth-child(3):before,
+.chess_board__row:nth-child(8) .chess_board__square:nth-child(3):before {
+  content: "C";
+}
+
+.chess_board__row:nth-child(1) .chess_board__square:nth-child(4):before,
+.chess_board__row:nth-child(8) .chess_board__square:nth-child(4):before {
+  content: "D";
+}
+
+.chess_board__row:nth-child(1) .chess_board__square:nth-child(5):before,
+.chess_board__row:nth-child(8) .chess_board__square:nth-child(5):before {
+  content: "E";
+}
+
+.chess_board__row:nth-child(1) .chess_board__square:nth-child(6):before,
+.chess_board__row:nth-child(8) .chess_board__square:nth-child(6):before {
+  content: "F";
+}
+
+.chess_board__row:nth-child(1) .chess_board__square:nth-child(7):before,
+.chess_board__row:nth-child(8) .chess_board__square:nth-child(7):before {
+  content: "G";
+}
+
+.chess_board__row:nth-child(1) .chess_board__square:nth-child(8):before,
+.chess_board__row:nth-child(8) .chess_board__square:nth-child(8):before {
+  content: "H";
+}
+
+.chess_board__row:nth-child(n):before,
+.chess_board__row:nth-child(n):after {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.75);
+  height: calc((100% - (10 * var(--unit))) / 8);
+  width: calc(5 * var(--unit));
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.chess_board__row:nth-child(n):before {
+  left: 0;
+}
+
+.chess_board__row:nth-child(n):after {
+  right: 0;
+}
+
+.chess_board__row:nth-child(1):before,
+.chess_board__row:nth-child(1):after {
+  content: "8";
+}
+.chess_board__row:nth-child(2):before,
+.chess_board__row:nth-child(2):after {
+  content: "7";
+}
+.chess_board__row:nth-child(3):before,
+.chess_board__row:nth-child(3):after {
+  content: "6";
+}
+.chess_board__row:nth-child(4):before,
+.chess_board__row:nth-child(4):after {
+  content: "5";
+}
+.chess_board__row:nth-child(5):before,
+.chess_board__row:nth-child(5):after {
+  content: "4";
+}
+.chess_board__row:nth-child(6):before,
+.chess_board__row:nth-child(6):after {
+  content: "3";
+}
+.chess_board__row:nth-child(7):before,
+.chess_board__row:nth-child(7):after {
+  content: "2";
+}
+.chess_board__row:nth-child(8):before,
+.chess_board__row:nth-child(8):after {
+  content: "1";
+}
