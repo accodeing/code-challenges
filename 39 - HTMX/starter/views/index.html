@@ -1,0 +1,8 @@
+<h2>TODOs</h2>
+<ul class="todo-list">
+  <% todos.forEach( function(todo) { %>
+    <li class="todo-list__item">
+      <%= todo.task %> - <%= todo.done %>
+    </li>
+  <% }) %>
+</ul>
