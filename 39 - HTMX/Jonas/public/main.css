@@ -1,0 +1,11 @@
+body {
+  background-color: #eee;
+}
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 4rem;
+  border-radius: 1rem;
+  box-shadow: 0rem 0.3rem 1rem #0008;
+}
