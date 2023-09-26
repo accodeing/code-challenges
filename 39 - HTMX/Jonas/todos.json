@@ -1,0 +1,44 @@
+[
+  {
+    "task": "Do the dishes",
+    "done": ""
+  },
+  {
+    "task": "Rake the yard",
+    "done": ""
+  },
+  {
+    "task": "Add more stuff"
+  },
+  {
+    "task": "Even more stuff"
+  },
+  {
+    "task": "Another item",
+    "done": false
+  },
+  {
+    "task": "Do stuff",
+    "done": false
+  },
+  {
+    "task": "Run rake",
+    "done": true
+  },
+  {
+    "task": "Something something",
+    "done": true
+  },
+  {
+    "task": "More stuff to do",
+    "done": true
+  },
+  {
+    "task": "Write better commit messages",
+    "done": true
+  },
+  {
+    "task": "Another task",
+    "done": true
+  }
+]

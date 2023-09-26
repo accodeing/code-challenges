@@ -1,3 +1,9 @@
-<% todos.forEach( (todo) => { %>
-<li class="todo-list__item"><%= todo.task %> - <%= todo.done %></li>
+<% todos.forEach( (todo, index) => { %>
+<li
+  class="todo-list__item <%= todo.done ? 'todo-list__item--done' : 'todo-list__item--pending' %>"
+>
+  <input hx-post="/todos/<%= index %>" hx-target=".todo-list"
+  hx-swap="innerHTML" type="checkbox" <%= todo.done ? 'checked' : '' %> />
+  <span> <%= todo.task %> </span>
+</li>
 <% }) %>

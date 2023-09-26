@@ -18,21 +18,27 @@
   </head>
   <body>
     <main>
-      <h1>HTMX ToDo</h1>
+      <div class="header">
+        <img class="logo" src="/survey.png" />
+        <h1>HTMX ToDo</h1>
+      </div>
+
       <h2>TODOs</h2>
       <ul class="todo-list">
         <%- include('todos', {todos: todos}); %>
       </ul>
-      <h2>Add a TODO</h2>
+      
+      <h4>Add a TODO</h2>
       <form
         hx-post="/todos"
         hx-trigger="submit"
         hx-target=".todo-list"
         hx-swap="innerHTML"
+        hx-on::after-request="this.querySelector('[name=task]').value = ''"
+        class="todo-list__form"
       >
-        <label for="todo-name">Name</label>
-        <input type="text" name="task" id="todo-task" />
-        <input type="hidden" name="done" id="todo-done" />
+        <label for="todo-name">Task</label>
+        <input type="text" autofocus required name="task" id="todo-task" />
         <button type="submit">Add</button>
       </form>
     </main>

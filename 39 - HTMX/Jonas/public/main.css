@@ -9,3 +9,33 @@ main {
   border-radius: 1rem;
   box-shadow: 0rem 0.3rem 1rem #0008;
 }
+
+h2,
+h4 {
+  margin: 2rem 0 1rem;
+}
+
+.logo {
+  max-width: 4rem;
+}
+
+.todo-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.header,
+.todo-list__item,
+.todo-list__form {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  align-items: center;
+}
+
+.todo-list__item--pending + .todo-list__item--done {
+  border-top: 1px solid #eee;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
