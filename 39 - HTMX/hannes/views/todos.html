@@ -1,0 +1,6 @@
+<% todos.forEach( (todo) => { %>
+  <li class="todo">
+    <%= todo.task %>
+    <button hx-patch="/todos/<%= todo.id %>/done"><%= todo.done %></button>
+  </li>
+<% }) %>
