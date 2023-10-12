@@ -40,5 +40,5 @@ Each challenge has different rules and restraints and serve different purpouses.
 | 36  | [Narcissistic number](36%20-%20Narcissistic%20number) | Problem solution and code readability | Free Choice | Hannes |
 | 37  | [Hello Hanami](37%20-%20Hello%20Hanami) | A Hello World in Hanami | Hanami 2.0 | Hannes |
 | 38  | [A Game of Chess](38%20-%20A%20Game%20of%20Chess) | A CSS challenge with AI | HTML & CSS | Hannes |
-| 39  | [TODO HTMX](39%20-%20TODO%20HTMX) | TODO app in HTMX | HTMX | Jonas |
-| 40  | [Tailwind](40%20-%20Tailwind%20CSS) | A CSS challenge with AI | Tailwind | Anders |
+| 39  | [TODO HTMX](39%20-%20HTMX) | TODO app in HTMX | HTMX | Jonas |
+| 40  | [Tailwind CSS](40%20-%20Tailwind%20CSS) | Let's try Tailwind CSS! | Tailwind | Anders |
