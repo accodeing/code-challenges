@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS</title>
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="min-h-full">
+      <nav class="bg-gradient-to-b from-teal-400 to-teal-500">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="flex h-16 items-center justify-between">
+    
+            <div class="flex items-center">
+              <div class="flex-shrink-0">
+                <img class="h-16 w-32 relative -top-3" src="https://accodeing.com/assets/images/only_logo.svg" alt="Accodeing to you">
+              </div>
+              <nav class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="#" class="bg-teal-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
+                  <a href="#" class="text-teal-300 hover:bg-teal-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</a>
+                  <a href="#" class="text-teal-300 hover:bg-teal-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact</a>
+                </div>
+              </nav>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+              <!-- Mobile menu button -->
+              <button type="button" class="relative inline-flex items-center justify-center rounded-md bg-teal-800 p-2 text-teal-400 hover:bg-teal-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-teal-800" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <!-- Menu open: "hidden", Menu closed: "block" -->
+                <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <!-- Menu open: "block", Menu closed: "hidden" -->
+                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="md:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
+            <!-- Current: "bg-teal-900 text-white", Default: "text-teal-300 hover:bg-teal-700 hover:text-white" -->
+            <a href="#" class="bg-teal-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Dashboard</a>
+            <a href="#" class="text-teal-300 hover:bg-teal-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Team</a>
+            <a href="#" class="text-teal-300 hover:bg-teal-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
+            <a href="#" class="text-teal-300 hover:bg-teal-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a>
+            <a href="#" class="text-teal-300 hover:bg-teal-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Reports</a>
+          </div>
+          <div class="border-t border-teal-700 pb-3 pt-4">
+            <div class="flex items-center px-5">
+              <div class="flex-shrink-0">
+                <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              </div>
+              <div class="ml-3">
+                <div class="text-base font-medium leading-none text-white">Tom Cook</div>
+                <div class="text-sm font-medium leading-none text-teal-400">tom@example.com</div>
+              </div>
+              <button type="button" class="relative ml-auto flex-shrink-0 rounded-full bg-teal-800 p-1 text-teal-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-teal-800">
+                <span class="absolute -inset-1.5"></span>
+                <span class="sr-only">View notifications</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-3 space-y-1 px-2">
+              <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-teal-400 hover:bg-teal-700 hover:text-white">Your Profile</a>
+              <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-teal-400 hover:bg-teal-700 hover:text-white">Settings</a>
+              <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-teal-400 hover:bg-teal-700 hover:text-white">Sign out</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <header class="bg-white shadow">
+        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+          <h1 class="text-3xl font-bold tracking-tight text-gray-900">Tailwind CSS code challenge</h1>
+        </div>
+      </header>
+      <main>
+        <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+
+          <section class="bg-white py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+              <div class="mx-auto max-w-2xl lg:text-center">
+                <h2 class="text-base font-semibold leading-7 text-teal-600">alleged</h2>
+                <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Benefits of Tailwind</p>
+                <p class="mt-6 text-lg leading-8 text-gray-600">According to tailwindcss.com these are a couple of benefits of using Tailwind:</p>
+              </div>
+              <div class="mx-auto mt-16 max-w-4xl sm:mt-20 lg:mt-24 lg:max-w-6xl">
+                <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-3 lg:gap-y-16">
+                  <div class="relative pl-16">
+                    <dt class="text-base font-semibold leading-7 text-gray-900">
+                      <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-teal-600">
+                        <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                        </svg>
+                      </div>
+                      Naming made easy
+                    </dt>
+                    <dd class="mt-2 text-base leading-7 text-gray-600">You aren’t wasting energy inventing class names. No more adding silly class names like sidebar-inner-wrapper just to be able to style something, and no more agonizing over the perfect abstract name for something that’s really just a flex container.</dd>
+                  </div>
+                  <div class="relative pl-16">
+                    <dt class="text-base font-semibold leading-7 text-gray-900">
+                      <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-teal-600">
+                        <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                        </svg>
+                      </div>
+                      Slimmer CSS
+                    </dt>
+                    <dd class="mt-2 text-base leading-7 text-gray-600">Your CSS stops growing. Using a traditional approach, your CSS files get bigger every time you add a new feature. With utilities, everything is reusable so you rarely need to write new CSS.</dd>
+                  </div>
+                  <div class="relative pl-16">
+                    <dt class="text-base font-semibold leading-7 text-gray-900">
+                      <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-teal-600">
+                        <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+                        </svg>
+                      </div>
+                      Prevents CSS bugs
+                    </dt>
+                    <dd class="mt-2 text-base leading-7 text-gray-600">Making changes feels safer. CSS is global and you never know what you’re breaking when you make a change. Classes in your HTML are local, so you can change them without worrying about something else breaking.</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </section>
+
+          <section class="bg-white py-24 sm:py-32">
+            <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+              <div class="max-w-2xl">
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Team</h2>
+              </div>
+              <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+                <li>
+                  <div class="flex items-center gap-x-6">
+                    <img class="h-16 w-16 rounded-full" src="http://placekitten.com/g/200/200" alt="">
+                    <div>
+                      <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">John Doe</h3>
+                      <p class="text-sm font-semibold leading-6 text-teal-600">Founder & CEO</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex items-center gap-x-6">
+                    <img class="h-16 w-16 rounded-full" src="http://placekitten.com/g/200/200" alt="">
+                    <div>
+                      <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Jane Smith</h3>
+                      <p class="text-sm font-semibold leading-6 text-teal-600">Web Developer</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+
+        </div>
+      </main>
+
+      <footer class="min-h-full bg-gray-900 p-4 text-gray-100">
+        <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <p>&copy; Accodeing to you</p>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>
