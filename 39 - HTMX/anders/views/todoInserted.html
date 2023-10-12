@@ -1,0 +1,3 @@
+<%- include('todo', {todo: todo}); %>
+
+<p hx-swap-oob="beforeend:#message">New task created: <%= todo.task %></p>

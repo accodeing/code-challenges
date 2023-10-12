@@ -1,0 +1,33 @@
+<script
+  src="https://unpkg.com/htmx.org@1.9.5"
+  integrity="sha384-xcuj3WpfgjlKF+FXhSQFQ0ZNr39ln+hwjN3npfM9VBnUskLolQAcN80McRIVOPuO"
+  crossorigin="anonymous"
+></script>
+
+<h2>TODOs</h2>
+<div>
+  <ul class="todo-list">
+    <% todos.forEach( function(todo) { %> <%- include('todo', {todo: todo}); %>
+    <% }) %>
+  </ul>
+
+  <form
+    method="POST"
+    action="/"
+    hx-post="/"
+    hx-target=".todo-list"
+    hx-swap="afterbegin"
+    hx-on::after-request="this.reset()"
+  >
+    <label>
+      <span>Add</span>
+      <input
+        type="text"
+        name="task"
+        data-script="on keyup if the event's key is 'Enter' set my value to '' trigger keyup"
+      />
+    </label>
+  </form>
+
+  <p id="message"></p>
+</div>
