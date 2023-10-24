@@ -1,0 +1,146 @@
+:root {
+  --background: #FEFDF9;
+  --near-black: #010017;
+  --primary: #D05A5A;
+  --secondary: #D1AA71;
+  --text: #020210;
+  --text-light: #B8B6B7;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2;
+}
+
+body {
+  margin-bottom: 9rem;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent calc(100% - 24rem),
+    var(--text-light) 100%
+  );
+}
+
+header, main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 5rem 0 2.5rem;
+}
+
+.logo {
+  height: 80px;
+}
+
+.menu__list {
+  list-style-type: none;
+}
+
+.menu__link {
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+.hero__image {
+  max-width: 100%;
+}
+
+.hero__title {
+  font-size: 4rem;
+  margin: 0;
+  margin-top: 1rem;
+  line-height: .96;
+  letter-spacing: -1px;
+  max-width: 100%;
+}
+
+.hero__text {
+  padding: .25rem .5rem;
+  line-height: 1.66;
+}
+
+.hero__text > .button {
+  margin-top: 1rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  letter-spacing: 0.35rem;
+  color: var(--background);
+  text-decoration: none;
+  font-size: .85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.button--primary {
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+}
+
+.top-news {
+  background-color: var(--near-black);
+  color: white;
+  padding: 1rem 1.5rem;
+}
+
+.top-news__title {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: var(--secondary);
+}
+
+.top-news-item {
+  padding: 1.5rem 0;
+  color: var(--text-light);
+  border-bottom: 1px solid currentColor;
+}
+
+.top-news-item:first-of-type {
+  padding-top: 0;
+}
+
+.top-news-item:last-of-type {
+  border: none;
+  padding-bottom: 0;
+}
+
+.top-news-item__title {
+  margin: 0;
+  color: white;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+}
+
+.top-news-item__text {
+  margin: 0;
+}
+
+.highlighted-news-items {
+  margin-top: 2.5rem;
+}
+
+.highlighted-news-item > * {
+  margin: 0;
+}
+
+.highlighted-news-item__number {
+  line-height: 1.4;
+  color: var(--text-light);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.highlighted-news-item__title {
+  font-size: 1.25rem;
+}
