@@ -1,0 +1,53 @@
+.overlay {
+  background-image: url('../img/finished.jpg');
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.menu__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1rem;
+}
+
+.hero__image {
+  grid-column: 1 / -1;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  grid-gap: 1rem;
+}
+
+.highlighted-news-items {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.highlighted-news-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1rem;
+}
