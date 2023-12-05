@@ -1,0 +1,9 @@
+@media (max-width: 749px) {
+  .main {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+      '. hero .'
+      '. aside .'
+      '. highlighted-news-items .';
+  }
+}

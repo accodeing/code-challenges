@@ -1,0 +1,40 @@
+@media (min-width: 750px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .main {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'hero hero aside';
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'image image'
+      'title text';
+    overflow: hidden;
+    gap: 1rem;
+  }
+
+  .top-news-items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .highlighted-news-items {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: subgrid;
+  }
+}
