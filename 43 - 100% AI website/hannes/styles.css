@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+header {
+  background: url('header-background.webp') no-repeat center center/cover;
+  color: #fff;
+  padding-top: 30px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 4px #000;
+}
+header h1 {
+  text-align: center;
+  margin: 0;
+}
+nav {
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Semi-transparent background for the nav bar */
+  padding: 10px;
+  border-radius: 5px; /* Rounded corners for the nav bar */
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #0779e4; /* Change to your preferred hover color */
+  color: #000;
+  border-radius: 3px; /* Rounded corners on hover */
+  text-shadow: none; /* Remove text shadow for clearer hover effect */
+}
+article {
+  margin-top: 20px;
+}
+h2 {
+  color: #333;
+}
