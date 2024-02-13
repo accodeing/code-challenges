@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Board Games Galore</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      header {
+        width: 100%;
+        height: 80vh; /* Set the height to 80% of the viewport height */
+        background: url("./DALL·E 2024-02-13 08.57.58 - A group of robots sitting around a table, playing a made-up board game that looks exceptionally bland and typical of a trading in the Mediterranean st.webp")
+          no-repeat center center;
+        background-size: cover; /* Ensure the image covers the full area */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      h1 {
+        background-color: white; /* White background */
+        color: black; /* Black text */
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+      footer {
+        text-align: center;
+        padding: 10px 0;
+        font-size: 0.8em;
+        color: #666;
+      }
+      h1,
+      h2 {
+        color: #333;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        padding: 5px 0;
+        position: relative;
+      }
+      li:hover .description {
+        display: block;
+        opacity: 1;
+        transform: scale(1.05);
+      }
+      .description {
+        display: none;
+        position: absolute;
+        left: 0;
+        background-color: #fff; /* Make it not transparent */
+        padding: 15px; /* Increased padding */
+        margin-top: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        width: 350px; /* Make it larger */
+        transform: scale(1);
+        z-index: 100;
+      }
+      @keyframes popIn {
+        from {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1.05);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Board Games</h1>
+      </header>
+      <section>
+        <h2>Welcome to the World of Board Games</h2>
+        <p>
+          Board games have been a source of entertainment for centuries,
+          bringing friends and families together for strategic play, fun, and
+          learning. From classic games that test your strategic thinking to
+          modern games designed with elaborate narratives and complex mechanics,
+          there's a board game out there for everyone.
+        </p>
+      </section>
+      <section>
+        <h2>Popular Board Games</h2>
+        <ul>
+          <li>
+            Catan
+            <div class="description">
+              A game of resource gathering and trading, perfect for strategy
+              lovers.
+              <img
+                src="DALL·E 2024-02-13 09.10.32 - A group of robots sitting around a table, playing a fake version of the board game Catan. The game should resemble Catan with its hexagonal tiles and .webp"
+                alt="Robots playing Catan"
+                style="width: 100%; max-width: 300px; margin-top: 10px"
+              />
+            </div>
+          </li>
+          <li>
+            Monopoly
+            <div class="description">
+              The classic game of real estate and economics. Dominate the market
+              to win!
+            </div>
+          </li>
+          <li>
+            Chess
+            <div class="description">
+              The timeless game of strategic warfare. Outthink your opponent to
+              win.
+            </div>
+          </li>
+          <li>
+            Ticket to Ride
+            <div class="description">
+              A railway-themed strategy game. Build the most powerful railroad
+              empire.
+            </div>
+          </li>
+          <li>
+            Pandemic
+            <div class="description">
+              A cooperative game where players fight global diseases. Can you
+              save humanity?
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Discover "Monotony": The Board Game</h2>
+        <p>
+          Introducing "Monotony": the board game that dares to defy the
+          conventions of excitement! Designed with an avant-garde approach to
+          entertainment, "Monotony" embraces the beauty of the mundane.
+          Featuring a game board that celebrates minimalistic charm and game
+          pieces that epitomize the essence of simplicity, "Monotony" invites
+          you to experience the pinnacle of plainness. Dive into a world where
+          the thrill of the game is in its lack thereof, and where every turn is
+          a gentle reminder of life's quieter moments. Perfect for those who
+          seek to find fascination in the fundamentally unremarkable, "Monotony"
+          might just be the game you almost wanted.
+        </p>
+        <img
+          src="DALL·E 2024-02-13 09.37.12 - Create an image of an imaginary board game that looks extremely boring. The game should feature a very simple and plain design, with muted colors and .webp"
+          alt="Discover 'Monotony': The Board Game"
+        />
+      </section>
+      <footer>
+        <p>Board Games Galore © 2024. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
