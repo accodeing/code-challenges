@@ -1,0 +1,110 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-container {
+  display: flex;
+  width: 100%;
+  max-height: 60vh; /* Sets the maximum height of the container */
+  align-items: stretch; /* This ensures that the images will cover the full container height */
+  position: relative;
+}
+
+.hero-image {
+  flex: 1; /* Each image will take up equal space */
+  width: 50%; /* Ensures that each image tries to fill half the container's width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the container without distorting the aspect ratio */
+}
+
+.hero-left {
+  object-position: top center; /* Adjusts object position for the left image */
+}
+
+.hero-right {
+  object-position: bottom center; /* Adjusts object position for the right image */
+}
+
+.title-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+.title-overlay h1 {
+  margin: 0;
+  font-family: "Bangers", cursive;
+  font-size: clamp(24px, 5vw, 60px);
+  color: #000;
+  background-color: #ffd700;
+  padding: 2vw 3vw; /* Adjusted padding */
+  box-shadow: 4px 4px 0px #000;
+  display: inline-block;
+  clip-path: polygon(0 0, 100% 10%, 90% 90%, 10% 100%);
+}
+
+.title-text {
+  background-color: #ffd700; /* Solid color for the text background */
+  padding: 1vw 2vw; /* Responsive padding to prevent text cut-off */
+  clip-path: polygon(
+    10% 0%,
+    100% 0%,
+    90% 100%,
+    0% 100%
+  ); /* Perspective rectangle shape */
+  display: inline-block;
+  color: #000; /* Text color, adjust as needed */
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif; /* Consider using a Google Font for more flair */
+  background-color: #f0f0f0; /* Light background to make the text pop */
+}
+
+main {
+  max-width: 800px; /* Defines the maximum width of the content column */
+  margin: 0 auto; /* Centers the column on the page */
+  padding: 20px;
+  background-color: #ffffff; /* White background for the content area */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+section {
+  margin-bottom: 40px; /* Space between sections */
+}
+
+h2,
+h3 {
+  color: #d6336c; /* Bright color for headlines */
+  font-weight: bold;
+  text-transform: uppercase; /* Adds a stylistic touch to headlines */
+}
+
+h2 {
+  margin-top: 0; /* Removes default top margin for the first heading */
+  font-size: 2.5rem; /* Larger size for section titles */
+}
+
+h3 {
+  font-size: 2rem; /* Size for subsection titles */
+}
+
+p {
+  line-height: 1.6; /* Improves readability */
+  color: #333; /* Darker text for contrast */
+}
+
+/* Additional styling can be applied for links, images, and other elements as needed */
