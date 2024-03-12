@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="/assets/style/main.css" />
+
+    <title>Frontend Mentor | Multi-step form</title>
+  </head>
+  <body>
+    <main class="form">
+      <!-- Sidebar start -->
+      <aside class="progress">
+        <div class="progress-step">
+          <p class="progress-step__name">Step 1</p>
+          <h3 class="progress-step__description">Personal info</h3>
+        </div>
+        <div class="progress-step">
+          <p class="progress-step__name">Step 2</p>
+          <h3 class="progress-step__description">Select plan</h3>
+        </div>
+        <div class="progress-step">
+          <p class="progress-step__name">Step 3</p>
+          <h3 class="progress-step__description">Add-ons</h3>
+        </div>
+        <div class="progress-step">
+          <p class="progress-step__name">Step 4</p>
+          <h3 class="progress-step__description">Summary</h3>
+        </div>
+      </aside>
+
+      <!-- Sidebar end -->
+
+      <form name="multistep-form" action="#" method="POST">
+        <!-- Step 1 start -->
+        <section class="step step--active">
+          <h1 class="step__title">Personal info</h1>
+          <p class="step__subtitle">
+            Please provide your name, email address, and phone number.
+          </p>
+
+          <fieldset class="step__input-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="e.g. Stephen King"
+            />
+          </fieldset>
+
+          <fieldset class="step__input-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="e.g. stephenking@lorem.com"
+            />
+          </fieldset>
+
+          <fieldset class="step__input-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              placeholder="e.g. +1 234 567 890"
+            />
+          </fieldset>
+
+          <button class="step__btn next">Next Step</button>
+        </section>
+        <!-- Step 1 end -->
+
+        <!-- Step 2 start -->
+        <section class="step">
+          <h1 class="step__title">Select your plan</h1>
+          <p class="step__subtitle">
+            You have the option of monthly or yearly billing.
+          </p>
+
+          <fieldset class="step__input-group">
+            <label for="arcade">Arcade</label>
+            <input
+              type="radio"
+              id="arcade"
+              name="plan"
+              value="arcade"
+              required
+            />
+            <span>$9/mo</span>
+          </fieldset>
+
+          <fieldset class="step__input-group">
+            <label for="advanced">Advanced</label>
+            <input
+              type="radio"
+              id="advanced"
+              name="plan"
+              value="advanced"
+              required
+            />
+            <span>$12/mo</span>
+          </fieldset>
+
+          <fieldset class="step__input-group">
+            <label for="pro">Pro</label>
+            <input type="radio" id="pro" name="plan" value="pro" required />
+            <span>$15/mo</span>
+          </fieldset>
+
+          <button class="step__btn back">Go Back</button>
+          <button class="step__btn next">Next Step</button>
+        </section>
+        <!-- Step 2 end -->
+
+        <!-- Step 3 start -->
+        <section class="step">
+          <h1 class="step__title">Pick add-ons</h1>
+          <p class="step__subtitle">
+            Add-ons help enhance your gaming experience.
+          </p>
+
+          <fieldset class="step__input-group">
+            <label for="online-service">Online service</label>
+            <input
+              type="checkbox"
+              id="online-service"
+              name="online-service"
+              value="online-service"
+            />
+            <span>Access to multiplayer games +$1/mo</span>
+          </fieldset>
+
+          <fieldset class="step__input-group">
+            <label for="larger-storage">Larger storage</label>
+            <input
+              type="checkbox"
+              id="larger-storage"
+              name="larger-storage"
+              value="larger-storage"
+            />
+            <span>Extra 1TB of cloud save +$2/mo</span>
+          </fieldset>
+
+          <fieldset class="step__input-group">
+            <label for="customizable-profile">Customizable Profile</label>
+            <input
+              type="checkbox"
+              id="customizable-profile"
+              name="customizable-profile"
+              value="customizable-profile"
+            />
+            <span>Custom theme on your profile +$2/mo</span>
+          </fieldset>
+
+          <button class="step__btn back">Go Back</button>
+          <button class="step__btn next">Next Step</button>
+        </section>
+        <!-- Step 3 end -->
+
+        <!-- Step 4 start -->
+        <section class="step">
+          <h1 class="step__title">Finishing up</h1>
+          <p class="step__subtitle">
+            Double-check everything looks OK before confirming.
+          </p>
+
+          <!-- Dynamically add subscription and add-on selections here -->
+          <p>Total (per month/year)</p>
+
+          <button class="step__btn back">Go Back</button>
+          <button class="step__btn next">Confirm</button>
+        </section>
+        <!-- Step 4 end -->
+
+        <!-- Step 5 start -->
+        <section class="step">
+          <h1 class="step__title">Thank you!</h1>
+          <p class="step__subtitle">
+            Thanks for confirming your subscription! We hope you have fun using
+            our platform. If you ever need support, please feel free to email us
+            at support@loremgaming.com.
+          </p>
+        </section>
+      </form>
+      <!-- Step 5 end -->
+    </main>
+  </body>
+</html>
