@@ -1,0 +1,63 @@
+@media (max-width: 700px) {
+  body {
+    margin-bottom: 3rem;
+  }
+
+  .header {
+    padding: 1rem 1rem 0;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "hero"
+      "aside";
+    gap: 2rem;
+  }
+
+  .hero {
+    grid-area: hero;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image"
+      "title"
+      "text";
+    overflow: hidden;
+    gap: 1rem;
+  }
+
+  .hero__image {
+    height: 80vw;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: center center;
+  }
+
+  .hero__title {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  .hero__text {
+    padding: 0;
+  }
+
+  .top-news {
+    margin-top: 1.5rem;
+  }
+
+  .highlighted-news-items {
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+  }
+}
