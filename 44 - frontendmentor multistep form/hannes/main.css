@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('assets/fonts/Ubuntu-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('assets/fonts/Ubuntu-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('assets/fonts/Ubuntu-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+  --color__white: hsl(0, 0%, 100%);
+  --color__light-blue: hsl(206, 94%, 87%);
+  --color__cool-grey: hsl(231, 11%, 63%);
+  --color__light-grey: hsl(229, 24%, 87%);
+  --color__mangolia: hsl(217, 100%, 97%);
+}
+
+body {
+  background-color: var(--color__mangolia);
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+
+.overlay {
+  background-image: url('../design/active-states-step-1.jpg');
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.steps {
+  background-image: url('assets/images/bg-sidebar-desktop.svg');
+  color: var(--color__white);
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.step__heading {
+  display: block;
+  font-weight: 700;
+}
+
+.step__nr {
+  display: block;
+}
+
+.form {
+  background-color: var(--color__white);
+}
