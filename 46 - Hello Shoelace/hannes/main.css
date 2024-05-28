@@ -1,0 +1,27 @@
+:root {
+  --color: #562754;
+  --color--light: #D9D9D9;
+}
+.details-section {
+  padding: 100px;
+  background-color: var(--color--light);
+}
+
+.details::part(base) {
+  border: 0;
+
+  background-color: var(--color--light);
+  border-bottom: 2px solid var(--color);
+  border-radius: 0;
+}
+.details::part(header) {
+  color: var(--color);
+  font-family: "Passion One", sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 0;
+  padding-right: 0;
+}
+.details::part(content) {
+}
