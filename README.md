@@ -57,3 +57,4 @@ Each challenge has different rules and restraints and serve different purpouses.
 | 44  | [Frontendmentor multistep form](44%20-%20frontendmentor%20multistep%20form) | Build the Frontend Mentor multi-step form and get it as close to the design as possible. | HTML, CSS & JS | Jonas |
 | 45  | [CSS @layer](45%20-%20CSS%20%40layer) | Redesign a Bootstrap styled site by adding your own styles in a CSS `@layer`. | CSS | Hannes |
 | 46  | [Hello Shoelace](46%20-%20Hello%20Shoelace) | Try out the Shoelace web component framework and see how flexible it is. | Web components | Hannes |
+| 47  | [Print Receipt](47%20-%20Print%20Receipt) | Print a receipt. Pure and simple JS programming in the terminal. | JavaScript | Hannes |
